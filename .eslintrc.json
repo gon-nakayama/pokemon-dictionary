@@ -9,7 +9,8 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "standard-with-typescript",
-    "prettier"
+    "prettier",
+    "plugin:tailwindcss/recommended"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -99,15 +100,6 @@
         "varsIgnorePattern": "^_",
         "args": "after-used",
         "argsIgnorePattern": "^_"
-      }
-    ],
-
-    // Boolean 値が期待される記述で、Boolean 型以外の使用を許可しないルール
-    // ここではオブジェクト、関数、null、undefined の場合には許容するよう設定
-    "@typescript-eslint/strict-boolean-expressions": [
-      "error",
-      {
-        "allowNullableObject": true
       }
     ],
 
@@ -228,7 +220,9 @@
 
     // Next.js における img 要素の使用を禁止するルール
     // 一般的な静的サイト構築において img 要素の全面禁止は不便なので無効化
-    "@next/next/no-img-element": "off"
+    "@next/next/no-img-element": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/dot-notation": "off"
   },
   "overrides": [
     {
@@ -248,5 +242,6 @@
         ]
       }
     }
-  ]
+  ],
+  "ignorePatterns": ["*.config.js"]
 }
