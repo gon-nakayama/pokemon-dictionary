@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { fetchPokemons } from "@/lib/fetchPokemons";
+import Header from "@/pages/components/Header";
 import type { FetchPokemonResponse } from "@/types";
 
 export async function getStaticProps() {
@@ -19,17 +20,7 @@ type TopProps = {
 const Top = (props: TopProps) => {
   return (
     <>
-      <div className="container my-5 px-8">
-        <div className="justify-between md:flex">
-          <h1
-            className="basis-1/2 bg-gradient-to-r from-green-500 via-blue-500
-        to-pink-500 bg-clip-text text-5xl font-bold
-        tracking-tight text-transparent"
-          >
-            ポケモン図鑑
-          </h1>
-        </div>
-      </div>
+      <Header />
       <div className="grid grid-cols-3 gap-6 p-8 md:grid-cols-6">
         {props.pokemons.map((pokemon: FetchPokemonResponse, index: number) => (
           <a key={index} href={`/pokemon/${encodeURIComponent(pokemon.id)}`}>

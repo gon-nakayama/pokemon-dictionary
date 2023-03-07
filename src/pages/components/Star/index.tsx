@@ -8,7 +8,7 @@ const Star = ({ isFilled }: StarProps) => {
       <svg
         aria-hidden="true"
         className={
-          isFilled ? "h-10 w-10 text-yellow-400" : "h-10 w-10 text-gray-300"
+          isFilled ? "h-7 w-7 text-yellow-400" : "h-7 w-7 text-gray-300"
         }
         fill="currentColor"
         viewBox="0 0 20 20"

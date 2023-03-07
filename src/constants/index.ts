@@ -9,3 +9,14 @@ export const HTTP_STATUS_CODES = {
 
 export type HttpStatus =
   (typeof HTTP_STATUS_CODES)[keyof typeof HTTP_STATUS_CODES];
+
+export const ABILITIES = {
+  HP: "HP",
+  ATACK: "こうげき",
+  DEFENSE: "ぼうぎょ",
+  SP_ATK: "とくこう",
+  SP_DEF: "とくぼう",
+  AGILITY: "すばやさ",
+} as const;
+
+export type Abilities = (typeof ABILITIES)[keyof typeof ABILITIES];
