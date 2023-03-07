@@ -20,7 +20,7 @@ const Top = (props: TopProps) => {
   return (
     <>
       <div className="container my-5 px-8">
-        <div className="flex justify-between">
+        <div className="justify-between md:flex">
           <h1
             className="basis-1/2 bg-gradient-to-r from-green-500 via-blue-500
         to-pink-500 bg-clip-text text-5xl font-bold
@@ -30,7 +30,7 @@ const Top = (props: TopProps) => {
           </h1>
         </div>
       </div>
-      <div className="grid grid-cols-6 gap-6 p-8">
+      <div className="grid grid-cols-3 gap-6 p-8 md:grid-cols-6">
         {props.pokemons.map((pokemon: FetchPokemonResponse, index: number) => (
           <a key={index} href={`/pokemon/${encodeURIComponent(pokemon.id)}`}>
             <Image
