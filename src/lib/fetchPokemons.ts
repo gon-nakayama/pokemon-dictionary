@@ -32,7 +32,7 @@ export const fetchPokemon = async (
 };
 
 export const fetchPokemons = async () => {
-  const url = "https://pokeapi.co/api/v2/pokemon?limit=800&offset=0";
+  const url = "https://pokeapi.co/api/v2/pokemon?limit=705&offset=0";
   const res = await fetch(url);
   const data = await res.json();
   const results = data.results;
