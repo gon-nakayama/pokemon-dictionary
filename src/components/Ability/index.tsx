@@ -1,4 +1,4 @@
-import Rating from "@/pages/components/Rating";
+import Rating from "@/components/Rating";
 import type { Abilities } from "@/constants";
 
 type AbilityProps = {

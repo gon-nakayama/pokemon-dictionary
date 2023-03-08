@@ -1,4 +1,4 @@
-import Star from "@/pages/components/Star";
+import Star from "@/components/Star";
 
 type RatingProps = {
   numStar: 0 | 1 | 2 | 3 | 4 | 5;

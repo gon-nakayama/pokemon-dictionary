@@ -3,8 +3,8 @@ import Link from "next/link";
 import { ABILITIES } from "@/constants";
 import { fetchPokemon, fetchPokemons } from "@/lib/fetchPokemons";
 import { translatePokemonType } from "@/lib/translator";
-import Ability from "@/pages/components/Ability";
-import Header from "@/pages/components/Header";
+import Ability from "@/components/Ability";
+import Header from "@/components/Header";
 import type { FetchPokemonResponse } from "@/types";
 
 type PokemonProps = {
