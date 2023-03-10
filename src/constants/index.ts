@@ -20,3 +20,26 @@ export const ABILITIES = {
 } as const;
 
 export type Abilities = (typeof ABILITIES)[keyof typeof ABILITIES];
+
+export const POKEMON_TYPES = {
+  NORMAL: "ノーマル",
+  FIGHTING: "かくとう",
+  FLYING: "ひこう",
+  POISON: "どく",
+  GROUND: "じめん",
+  ROCK: "いわ",
+  BUG: "むし",
+  GHOST: "ゴースト",
+  STEEL: "はがね",
+  FIRE: "ほのお",
+  WATER: "みず",
+  GRASS: "くさ",
+  ELECTRIC: "でんき",
+  PSYCHIC: "エスパー",
+  ICE: "こおり",
+  DRAGON: "ドラゴン",
+  DARK: "あく",
+  FAIRY: "フェアリー",
+  UNKNOWN: "不明",
+  SHADOW: "かげ",
+};
