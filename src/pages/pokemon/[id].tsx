@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Router from "next/router";
 import { ArrowNarrowLeftIcon } from "@heroicons/react/solid";
 import { pokemonFactory } from "@/api/models/pokemonModel";
 import { mockPokemonRepository } from "@/api/repositories/mock/mockPokemonRepository";
@@ -26,6 +27,10 @@ type PokemonProps = {
 };
 
 const Pokemon = ({ pokemon }: PokemonProps) => {
+  const handler = async () => {
+    await Router.push("/");
+  };
+
   return (
     <>
       {pokemon ? (
@@ -102,6 +107,7 @@ const Pokemon = ({ pokemon }: PokemonProps) => {
             </div>
             <div className="my-8 flex justify-center">
               <Button
+                onClick={handler}
                 size="lg"
                 variant="inverse"
                 startIcon={<ArrowNarrowLeftIcon className="h-4 w-4" />}
