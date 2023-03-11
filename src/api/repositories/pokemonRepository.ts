@@ -12,6 +12,7 @@ export type PokemonRepository = {
     params: Pick<GetPokemon, "name_ja">
   ) => Promise<GetPokemon[]>;
   getPokemonsTopView: () => Promise<TopView[]>;
+  getPokemon: (params: Pick<GetPokemon, "entry_number">) => Promise<GetPokemon>;
 };
 
 const getPokemonsTopView = async (): Promise<TopView[]> => {
@@ -22,6 +23,14 @@ const getPokemonsTopView = async (): Promise<TopView[]> => {
 
 const getPokemons = async (): Promise<GetPokemon[]> => {
   const response = await ApiClient.get("searchPokemons/pokemons");
+
+  return response.data;
+};
+
+const getPokemon = async (
+  params: Pick<GetPokemon, "entry_number">
+): Promise<GetPokemon> => {
+  const response = await ApiClient.get(`/pokemons/${params.entry_number}`);
 
   return response.data;
 };
@@ -40,4 +49,5 @@ export const pokemonRepository: PokemonRepository = {
   getPokemons,
   searchPokemons,
   getPokemonsTopView,
+  getPokemon,
 };

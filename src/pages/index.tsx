@@ -11,10 +11,7 @@ const Top = () => {
     <Layout>
       <div className="grid grid-cols-3 gap-6 p-8 md:grid-cols-6">
         {topViewPokemons.map((pokemon: TopView, index: number) => (
-          <a
-            key={index}
-            href={`/pokemon/${encodeURIComponent(pokemon.entry_number)}`}
-          >
+          <a key={index} href={`/pokemon/${pokemon.entry_number}`}>
             <Image
               style={{ backgroundColor: "#e4e4e7" }}
               className="animate-slide-in-bottom"

@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ["raw.githubusercontent.com"],
   },
+  env: {
+    ...require(`./env/${process.env.APP_ENV || "local"}.json`),
+  },
 };
 
 module.exports = nextConfig;

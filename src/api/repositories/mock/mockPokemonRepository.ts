@@ -37105,8 +37105,34 @@ const getPokemonsTopView = async (): Promise<TopView[]> => {
   ];
 };
 
+const getPokemon = async (
+  params: Pick<GetPokemon, "entry_number">
+): Promise<GetPokemon> => {
+  return {
+    id: 59,
+    name: "arcanine",
+    name_ja: "ウインディ",
+    entry_number: 59,
+    flavor_text:
+      "むかしから　おおくの　ひとを\nとりこにした　うつくしい　ポケモン。\nとぶように　かろやかに　はしる。",
+    genus: "でんせつポケモン",
+    image_url:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png",
+    hp: 90,
+    attack: 90,
+    defense: 90,
+    special_attack: 90,
+    special_defense: 90,
+    speed: 90,
+    height: 19,
+    weight: 1550,
+    types: "fire",
+  };
+};
+
 export const mockPokemonRepository: PokemonRepository = {
   getPokemons,
   searchPokemons,
   getPokemonsTopView,
+  getPokemon,
 };

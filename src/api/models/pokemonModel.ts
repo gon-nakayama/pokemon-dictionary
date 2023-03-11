@@ -35,6 +35,11 @@ export const pokemonFactory = (rep?: PokemonRepository) => {
     showTop: async (): Promise<TopView[]> => {
       return await repository.getPokemonsTopView();
     },
+    showOne: async (
+      params: Pick<GetPokemon, "entry_number">
+    ): Promise<GetPokemon> => {
+      return await repository.getPokemon({ ...params });
+    },
     show: async (): Promise<GetPokemon[]> => {
       return await repository.getPokemons();
     },

@@ -45,3 +45,26 @@ export const useFetchPokemons = () => {
     isFetching,
   };
 };
+
+export const useFetchPokemon = (entryNumber: number) => {
+  const [pokemon, setPokemon] = useState<GetPokemon | undefined>(undefined);
+  const [isFetching, setIsFetching] = useState(true);
+
+  useAsync(async () => {
+    try {
+      const data = await pokemonFactory(mockPokemonRepository).showOne({
+        entry_number: entryNumber,
+      });
+      setPokemon(data);
+    } catch (e) {
+      console.log(e);
+    } finally {
+      setIsFetching(false);
+    }
+  }, []);
+
+  return {
+    pokemon,
+    isFetching,
+  };
+};
