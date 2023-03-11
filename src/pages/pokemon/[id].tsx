@@ -3,7 +3,7 @@ import { ArrowNarrowLeftIcon } from "@heroicons/react/solid";
 import { ABILITIES } from "@/constants";
 import { Layout } from "@/layouts/";
 import { fetchPokemon, fetchPokemons } from "@/lib/fetchPokemons";
-import { translatePokemonType } from "@/lib/translator";
+import { translateKindToJaLabel } from "@/lib/translator";
 import Ability from "@/components/Ability";
 import { Button } from "@/components/Elements";
 import type { FetchPokemonResponse } from "@/types";
@@ -56,7 +56,7 @@ const PokemonDetail = ({ pokemon }: PokemonProps) => {
                     key={index}
                     className="mr-2 ml-3 rounded bg-blue-100 px-2.5 py-0.5 text-xs font-semibold text-red-800 dark:bg-red-200 dark:text-red-800"
                   >
-                    {translatePokemonType(t.type.name)}
+                    {translateKindToJaLabel(t.type.name)}
                   </span>
                 ))}
               </h5>

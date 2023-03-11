@@ -1,6 +1,13 @@
 import { pokemonRepository } from "@/api/repositories/pokemonRepository";
 import type { PokemonRepository } from "@/api/repositories/pokemonRepository";
 
+export type TopView = {
+  entry_number: number;
+  name_ja: string;
+  image_url: string;
+  types: string;
+};
+
 export type GetPokemon = {
   id: number;
   name: string;
@@ -25,17 +32,16 @@ export const pokemonFactory = (rep?: PokemonRepository) => {
   const repository = rep ?? pokemonRepository;
 
   return {
+    showTop: async (): Promise<TopView[]> => {
+      return await repository.getPokemonsTopView();
+    },
     show: async (): Promise<GetPokemon[]> => {
-      const response = await repository.getPokemons();
-
-      return response;
+      return await repository.getPokemons();
     },
     search: async (
       params: Pick<GetPokemon, "name_ja">
     ): Promise<GetPokemon[]> => {
-      const response = await repository.searchPokemons({ ...params });
-
-      return response;
+      return await repository.searchPokemons({ ...params });
     },
   };
 };

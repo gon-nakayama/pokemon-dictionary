@@ -1,5 +1,5 @@
-export const translatePokemonType = (type: string) => {
-  switch (type) {
+export const translateKindToJaLabel = (kind: string) => {
+  switch (kind) {
     case "normal":
       return "ノーマル";
     case "fighting":
@@ -35,7 +35,7 @@ export const translatePokemonType = (type: string) => {
     case "dark":
       return "あく";
     case "fairy":
-      return "フェアリー";
+      return "ﾌｪｱﾘｰ";
     default:
       return "なし";
   }

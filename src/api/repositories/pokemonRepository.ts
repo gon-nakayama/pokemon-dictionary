@@ -1,15 +1,23 @@
 import { ApiClient } from "@/api/api-client";
-import type { GetPokemon } from "@/api/models/pokemonModel";
+import type { GetPokemon, TopView } from "@/api/models/pokemonModel";
 
 /**
  * Respository層では、サーバ側から受領したレスポンスを
  * Modelで定義したフォーマットに整形する責務も持つ
  */
+
 export type PokemonRepository = {
   getPokemons: () => Promise<GetPokemon[]>;
   searchPokemons: (
     params: Pick<GetPokemon, "name_ja">
   ) => Promise<GetPokemon[]>;
+  getPokemonsTopView: () => Promise<TopView[]>;
+};
+
+const getPokemonsTopView = async (): Promise<TopView[]> => {
+  const response = await ApiClient.get("/pokemons?mode=topView");
+
+  return response.data;
 };
 
 const getPokemons = async (): Promise<GetPokemon[]> => {
@@ -31,4 +39,5 @@ const searchPokemons = async (
 export const pokemonRepository: PokemonRepository = {
   getPokemons,
   searchPokemons,
+  getPokemonsTopView,
 };

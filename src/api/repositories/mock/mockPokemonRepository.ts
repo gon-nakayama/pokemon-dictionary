@@ -1,4 +1,4 @@
-import type { GetPokemon } from "@/api/models/pokemonModel";
+import type { GetPokemon, TopView } from "@/api/models/pokemonModel";
 import type { PokemonRepository } from "@/api/repositories/pokemonRepository";
 
 const getPokemons = async (): Promise<GetPokemon[]> => {
@@ -28133,7 +28133,8980 @@ const searchPokemons = async (
   return response;
 };
 
+const getPokemonsTopView = async (): Promise<TopView[]> => {
+  return [
+    {
+      entry_number: 1,
+      name_ja: "フシギダネ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 2,
+      name_ja: "フシギソウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 3,
+      name_ja: "フシギバナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 4,
+      name_ja: "ヒトカゲ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+      types: "fire",
+    },
+    {
+      entry_number: 5,
+      name_ja: "リザード",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
+      types: "fire",
+    },
+    {
+      entry_number: 6,
+      name_ja: "リザードン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+      types: "fire,flying",
+    },
+    {
+      entry_number: 7,
+      name_ja: "ゼニガメ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+      types: "water",
+    },
+    {
+      entry_number: 8,
+      name_ja: "カメール",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png",
+      types: "water",
+    },
+    {
+      entry_number: 9,
+      name_ja: "カメックス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png",
+      types: "water",
+    },
+    {
+      entry_number: 10,
+      name_ja: "キャタピー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png",
+      types: "bug",
+    },
+    {
+      entry_number: 11,
+      name_ja: "トランセル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png",
+      types: "bug",
+    },
+    {
+      entry_number: 12,
+      name_ja: "バタフリー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 13,
+      name_ja: "ビードル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png",
+      types: "bug,poison",
+    },
+    {
+      entry_number: 14,
+      name_ja: "コクーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png",
+      types: "bug,poison",
+    },
+    {
+      entry_number: 15,
+      name_ja: "スピアー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png",
+      types: "bug,poison",
+    },
+    {
+      entry_number: 16,
+      name_ja: "ポッポ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 17,
+      name_ja: "ピジョン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 18,
+      name_ja: "ピジョット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 19,
+      name_ja: "コラッタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png",
+      types: "normal",
+    },
+    {
+      entry_number: 20,
+      name_ja: "ラッタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png",
+      types: "normal",
+    },
+    {
+      entry_number: 21,
+      name_ja: "オニスズメ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 22,
+      name_ja: "オニドリル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 23,
+      name_ja: "アーボ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png",
+      types: "poison",
+    },
+    {
+      entry_number: 24,
+      name_ja: "アーボック",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png",
+      types: "poison",
+    },
+    {
+      entry_number: 25,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+      types: "electric",
+    },
+    {
+      entry_number: 26,
+      name_ja: "ライチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+      types: "electric",
+    },
+    {
+      entry_number: 27,
+      name_ja: "サンド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png",
+      types: "ground",
+    },
+    {
+      entry_number: 28,
+      name_ja: "サンドパン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png",
+      types: "ground",
+    },
+    {
+      entry_number: 29,
+      name_ja: "ニドラン♀",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png",
+      types: "poison",
+    },
+    {
+      entry_number: 30,
+      name_ja: "ニドリーナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png",
+      types: "poison",
+    },
+    {
+      entry_number: 31,
+      name_ja: "ニドクイン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png",
+      types: "poison,ground",
+    },
+    {
+      entry_number: 32,
+      name_ja: "ニドラン♂",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png",
+      types: "poison",
+    },
+    {
+      entry_number: 33,
+      name_ja: "ニドリーノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png",
+      types: "poison",
+    },
+    {
+      entry_number: 34,
+      name_ja: "ニドキング",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png",
+      types: "poison,ground",
+    },
+    {
+      entry_number: 35,
+      name_ja: "ピッピ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 36,
+      name_ja: "ピクシー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 37,
+      name_ja: "ロコン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png",
+      types: "fire",
+    },
+    {
+      entry_number: 38,
+      name_ja: "キュウコン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png",
+      types: "fire",
+    },
+    {
+      entry_number: 39,
+      name_ja: "プリン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png",
+      types: "normal,fairy",
+    },
+    {
+      entry_number: 40,
+      name_ja: "プクリン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png",
+      types: "normal,fairy",
+    },
+    {
+      entry_number: 41,
+      name_ja: "ズバット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png",
+      types: "poison,flying",
+    },
+    {
+      entry_number: 42,
+      name_ja: "ゴルバット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png",
+      types: "poison,flying",
+    },
+    {
+      entry_number: 43,
+      name_ja: "ナゾノクサ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 44,
+      name_ja: "クサイハナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 45,
+      name_ja: "ラフレシア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 46,
+      name_ja: "パラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png",
+      types: "bug,grass",
+    },
+    {
+      entry_number: 47,
+      name_ja: "パラセクト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png",
+      types: "bug,grass",
+    },
+    {
+      entry_number: 48,
+      name_ja: "コンパン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png",
+      types: "bug,poison",
+    },
+    {
+      entry_number: 49,
+      name_ja: "モルフォン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png",
+      types: "bug,poison",
+    },
+    {
+      entry_number: 50,
+      name_ja: "ディグダ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png",
+      types: "ground",
+    },
+    {
+      entry_number: 51,
+      name_ja: "ダグトリオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png",
+      types: "ground",
+    },
+    {
+      entry_number: 52,
+      name_ja: "ニャース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png",
+      types: "normal",
+    },
+    {
+      entry_number: 53,
+      name_ja: "ペルシアン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png",
+      types: "normal",
+    },
+    {
+      entry_number: 54,
+      name_ja: "コダック",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png",
+      types: "water",
+    },
+    {
+      entry_number: 55,
+      name_ja: "ゴルダック",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png",
+      types: "water",
+    },
+    {
+      entry_number: 56,
+      name_ja: "マンキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 57,
+      name_ja: "オコリザル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 58,
+      name_ja: "ガーディ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png",
+      types: "fire",
+    },
+    {
+      entry_number: 59,
+      name_ja: "ウインディ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png",
+      types: "fire",
+    },
+    {
+      entry_number: 60,
+      name_ja: "ニョロモ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png",
+      types: "water",
+    },
+    {
+      entry_number: 61,
+      name_ja: "ニョロゾ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png",
+      types: "water",
+    },
+    {
+      entry_number: 62,
+      name_ja: "ニョロボン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png",
+      types: "water,fighting",
+    },
+    {
+      entry_number: 63,
+      name_ja: "ケーシィ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 64,
+      name_ja: "ユンゲラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 65,
+      name_ja: "フーディン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 66,
+      name_ja: "ワンリキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 67,
+      name_ja: "ゴーリキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 68,
+      name_ja: "カイリキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 69,
+      name_ja: "マダツボミ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 70,
+      name_ja: "ウツドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 71,
+      name_ja: "ウツボット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 72,
+      name_ja: "メノクラゲ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png",
+      types: "water,poison",
+    },
+    {
+      entry_number: 73,
+      name_ja: "ドククラゲ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png",
+      types: "water,poison",
+    },
+    {
+      entry_number: 74,
+      name_ja: "イシツブテ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png",
+      types: "rock,ground",
+    },
+    {
+      entry_number: 75,
+      name_ja: "ゴローン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png",
+      types: "rock,ground",
+    },
+    {
+      entry_number: 76,
+      name_ja: "ゴローニャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png",
+      types: "rock,ground",
+    },
+    {
+      entry_number: 77,
+      name_ja: "ポニータ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png",
+      types: "fire",
+    },
+    {
+      entry_number: 78,
+      name_ja: "ギャロップ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png",
+      types: "fire",
+    },
+    {
+      entry_number: 79,
+      name_ja: "ヤドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png",
+      types: "water,psychic",
+    },
+    {
+      entry_number: 80,
+      name_ja: "ヤドラン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png",
+      types: "water,psychic",
+    },
+    {
+      entry_number: 81,
+      name_ja: "コイル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png",
+      types: "electric,steel",
+    },
+    {
+      entry_number: 82,
+      name_ja: "レアコイル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png",
+      types: "electric,steel",
+    },
+    {
+      entry_number: 83,
+      name_ja: "カモネギ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 84,
+      name_ja: "ドードー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 85,
+      name_ja: "ドードリオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 86,
+      name_ja: "パウワウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png",
+      types: "water",
+    },
+    {
+      entry_number: 87,
+      name_ja: "ジュゴン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png",
+      types: "water,ice",
+    },
+    {
+      entry_number: 88,
+      name_ja: "ベトベター",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png",
+      types: "poison",
+    },
+    {
+      entry_number: 89,
+      name_ja: "ベトベトン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png",
+      types: "poison",
+    },
+    {
+      entry_number: 90,
+      name_ja: "シェルダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png",
+      types: "water",
+    },
+    {
+      entry_number: 91,
+      name_ja: "パルシェン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png",
+      types: "water,ice",
+    },
+    {
+      entry_number: 92,
+      name_ja: "ゴース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png",
+      types: "ghost,poison",
+    },
+    {
+      entry_number: 93,
+      name_ja: "ゴースト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png",
+      types: "ghost,poison",
+    },
+    {
+      entry_number: 94,
+      name_ja: "ゲンガー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png",
+      types: "ghost,poison",
+    },
+    {
+      entry_number: 95,
+      name_ja: "イワーク",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png",
+      types: "rock,ground",
+    },
+    {
+      entry_number: 96,
+      name_ja: "スリープ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/96.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 97,
+      name_ja: "スリーパー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 98,
+      name_ja: "クラブ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png",
+      types: "water",
+    },
+    {
+      entry_number: 99,
+      name_ja: "キングラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png",
+      types: "water",
+    },
+    {
+      entry_number: 100,
+      name_ja: "ビリリダマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png",
+      types: "electric",
+    },
+    {
+      entry_number: 101,
+      name_ja: "マルマイン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png",
+      types: "electric",
+    },
+    {
+      entry_number: 102,
+      name_ja: "タマタマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png",
+      types: "grass,psychic",
+    },
+    {
+      entry_number: 103,
+      name_ja: "ナッシー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png",
+      types: "grass,psychic",
+    },
+    {
+      entry_number: 104,
+      name_ja: "カラカラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png",
+      types: "ground",
+    },
+    {
+      entry_number: 105,
+      name_ja: "ガラガラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png",
+      types: "ground",
+    },
+    {
+      entry_number: 106,
+      name_ja: "サワムラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 107,
+      name_ja: "エビワラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/107.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 108,
+      name_ja: "ベロリンガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png",
+      types: "normal",
+    },
+    {
+      entry_number: 109,
+      name_ja: "ドガース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png",
+      types: "poison",
+    },
+    {
+      entry_number: 110,
+      name_ja: "マタドガス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png",
+      types: "poison",
+    },
+    {
+      entry_number: 111,
+      name_ja: "サイホーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png",
+      types: "ground,rock",
+    },
+    {
+      entry_number: 112,
+      name_ja: "サイドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png",
+      types: "ground,rock",
+    },
+    {
+      entry_number: 113,
+      name_ja: "ラッキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png",
+      types: "normal",
+    },
+    {
+      entry_number: 114,
+      name_ja: "モンジャラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png",
+      types: "grass",
+    },
+    {
+      entry_number: 115,
+      name_ja: "ガルーラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png",
+      types: "normal",
+    },
+    {
+      entry_number: 116,
+      name_ja: "タッツー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png",
+      types: "water",
+    },
+    {
+      entry_number: 117,
+      name_ja: "シードラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/117.png",
+      types: "water",
+    },
+    {
+      entry_number: 118,
+      name_ja: "トサキント",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png",
+      types: "water",
+    },
+    {
+      entry_number: 119,
+      name_ja: "アズマオウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png",
+      types: "water",
+    },
+    {
+      entry_number: 120,
+      name_ja: "ヒトデマン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png",
+      types: "water",
+    },
+    {
+      entry_number: 121,
+      name_ja: "スターミー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png",
+      types: "water,psychic",
+    },
+    {
+      entry_number: 122,
+      name_ja: "バリヤード",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png",
+      types: "psychic,fairy",
+    },
+    {
+      entry_number: 123,
+      name_ja: "ストライク",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 124,
+      name_ja: "ルージュラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png",
+      types: "ice,psychic",
+    },
+    {
+      entry_number: 125,
+      name_ja: "エレブー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/125.png",
+      types: "electric",
+    },
+    {
+      entry_number: 126,
+      name_ja: "ブーバー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png",
+      types: "fire",
+    },
+    {
+      entry_number: 127,
+      name_ja: "カイロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png",
+      types: "bug",
+    },
+    {
+      entry_number: 128,
+      name_ja: "ケンタロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png",
+      types: "normal",
+    },
+    {
+      entry_number: 129,
+      name_ja: "コイキング",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png",
+      types: "water",
+    },
+    {
+      entry_number: 130,
+      name_ja: "ギャラドス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+      types: "water,flying",
+    },
+    {
+      entry_number: 131,
+      name_ja: "ラプラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png",
+      types: "water,ice",
+    },
+    {
+      entry_number: 132,
+      name_ja: "メタモン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png",
+      types: "normal",
+    },
+    {
+      entry_number: 133,
+      name_ja: "イーブイ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
+      types: "normal",
+    },
+    {
+      entry_number: 134,
+      name_ja: "シャワーズ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png",
+      types: "water",
+    },
+    {
+      entry_number: 135,
+      name_ja: "サンダース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png",
+      types: "electric",
+    },
+    {
+      entry_number: 136,
+      name_ja: "ブースター",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png",
+      types: "fire",
+    },
+    {
+      entry_number: 137,
+      name_ja: "ポリゴン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png",
+      types: "normal",
+    },
+    {
+      entry_number: 138,
+      name_ja: "オムナイト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png",
+      types: "rock,water",
+    },
+    {
+      entry_number: 139,
+      name_ja: "オムスター",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png",
+      types: "rock,water",
+    },
+    {
+      entry_number: 140,
+      name_ja: "カブト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png",
+      types: "rock,water",
+    },
+    {
+      entry_number: 141,
+      name_ja: "カブトプス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png",
+      types: "rock,water",
+    },
+    {
+      entry_number: 142,
+      name_ja: "プテラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 143,
+      name_ja: "カビゴン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png",
+      types: "normal",
+    },
+    {
+      entry_number: 144,
+      name_ja: "フリーザー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png",
+      types: "ice,flying",
+    },
+    {
+      entry_number: 145,
+      name_ja: "サンダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png",
+      types: "electric,flying",
+    },
+    {
+      entry_number: 146,
+      name_ja: "ファイヤー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png",
+      types: "fire,flying",
+    },
+    {
+      entry_number: 147,
+      name_ja: "ミニリュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 148,
+      name_ja: "ハクリュー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 149,
+      name_ja: "カイリュー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png",
+      types: "dragon,flying",
+    },
+    {
+      entry_number: 150,
+      name_ja: "ミュウツー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 151,
+      name_ja: "ミュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 152,
+      name_ja: "チコリータ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/152.png",
+      types: "grass",
+    },
+    {
+      entry_number: 153,
+      name_ja: "ベイリーフ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/153.png",
+      types: "grass",
+    },
+    {
+      entry_number: 154,
+      name_ja: "メガニウム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/154.png",
+      types: "grass",
+    },
+    {
+      entry_number: 155,
+      name_ja: "ヒノアラシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/155.png",
+      types: "fire",
+    },
+    {
+      entry_number: 156,
+      name_ja: "マグマラシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/156.png",
+      types: "fire",
+    },
+    {
+      entry_number: 157,
+      name_ja: "バクフーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/157.png",
+      types: "fire",
+    },
+    {
+      entry_number: 158,
+      name_ja: "ワニノコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/158.png",
+      types: "water",
+    },
+    {
+      entry_number: 159,
+      name_ja: "アリゲイツ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/159.png",
+      types: "water",
+    },
+    {
+      entry_number: 160,
+      name_ja: "オーダイル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/160.png",
+      types: "water",
+    },
+    {
+      entry_number: 161,
+      name_ja: "オタチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/161.png",
+      types: "normal",
+    },
+    {
+      entry_number: 162,
+      name_ja: "オオタチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/162.png",
+      types: "normal",
+    },
+    {
+      entry_number: 163,
+      name_ja: "ホーホー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/163.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 164,
+      name_ja: "ヨルノズク",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/164.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 165,
+      name_ja: "レディバ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/165.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 166,
+      name_ja: "レディアン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/166.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 167,
+      name_ja: "イトマル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/167.png",
+      types: "bug,poison",
+    },
+    {
+      entry_number: 168,
+      name_ja: "アリアドス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/168.png",
+      types: "bug,poison",
+    },
+    {
+      entry_number: 169,
+      name_ja: "クロバット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/169.png",
+      types: "poison,flying",
+    },
+    {
+      entry_number: 170,
+      name_ja: "チョンチー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/170.png",
+      types: "water,electric",
+    },
+    {
+      entry_number: 171,
+      name_ja: "ランターン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/171.png",
+      types: "water,electric",
+    },
+    {
+      entry_number: 172,
+      name_ja: "ピチュー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png",
+      types: "electric",
+    },
+    {
+      entry_number: 173,
+      name_ja: "ピィ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/173.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 174,
+      name_ja: "ププリン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/174.png",
+      types: "normal,fairy",
+    },
+    {
+      entry_number: 175,
+      name_ja: "トゲピー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/175.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 176,
+      name_ja: "トゲチック",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/176.png",
+      types: "fairy,flying",
+    },
+    {
+      entry_number: 177,
+      name_ja: "ネイティ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/177.png",
+      types: "psychic,flying",
+    },
+    {
+      entry_number: 178,
+      name_ja: "ネイティオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/178.png",
+      types: "psychic,flying",
+    },
+    {
+      entry_number: 179,
+      name_ja: "メリープ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/179.png",
+      types: "electric",
+    },
+    {
+      entry_number: 180,
+      name_ja: "モココ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/180.png",
+      types: "electric",
+    },
+    {
+      entry_number: 181,
+      name_ja: "デンリュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/181.png",
+      types: "electric",
+    },
+    {
+      entry_number: 182,
+      name_ja: "キレイハナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/182.png",
+      types: "grass",
+    },
+    {
+      entry_number: 183,
+      name_ja: "マリル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/183.png",
+      types: "water,fairy",
+    },
+    {
+      entry_number: 184,
+      name_ja: "マリルリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/184.png",
+      types: "water,fairy",
+    },
+    {
+      entry_number: 185,
+      name_ja: "ウソッキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/185.png",
+      types: "rock",
+    },
+    {
+      entry_number: 186,
+      name_ja: "ニョロトノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/186.png",
+      types: "water",
+    },
+    {
+      entry_number: 187,
+      name_ja: "ハネッコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/187.png",
+      types: "grass,flying",
+    },
+    {
+      entry_number: 188,
+      name_ja: "ポポッコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/188.png",
+      types: "grass,flying",
+    },
+    {
+      entry_number: 189,
+      name_ja: "ワタッコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/189.png",
+      types: "grass,flying",
+    },
+    {
+      entry_number: 190,
+      name_ja: "エイパム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/190.png",
+      types: "normal",
+    },
+    {
+      entry_number: 191,
+      name_ja: "ヒマナッツ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/191.png",
+      types: "grass",
+    },
+    {
+      entry_number: 192,
+      name_ja: "キマワリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/192.png",
+      types: "grass",
+    },
+    {
+      entry_number: 193,
+      name_ja: "ヤンヤンマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/193.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 194,
+      name_ja: "ウパー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/194.png",
+      types: "water,ground",
+    },
+    {
+      entry_number: 195,
+      name_ja: "ヌオー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/195.png",
+      types: "water,ground",
+    },
+    {
+      entry_number: 196,
+      name_ja: "エーフィ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 197,
+      name_ja: "ブラッキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png",
+      types: "dark",
+    },
+    {
+      entry_number: 198,
+      name_ja: "ヤミカラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/198.png",
+      types: "dark,flying",
+    },
+    {
+      entry_number: 199,
+      name_ja: "ヤドキング",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/199.png",
+      types: "water,psychic",
+    },
+    {
+      entry_number: 200,
+      name_ja: "ムウマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/200.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 201,
+      name_ja: "アンノーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/201.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 202,
+      name_ja: "ソーナンス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/202.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 203,
+      name_ja: "キリンリキ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/203.png",
+      types: "normal,psychic",
+    },
+    {
+      entry_number: 204,
+      name_ja: "クヌギダマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/204.png",
+      types: "bug",
+    },
+    {
+      entry_number: 205,
+      name_ja: "フォレトス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/205.png",
+      types: "bug,steel",
+    },
+    {
+      entry_number: 206,
+      name_ja: "ノコッチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/206.png",
+      types: "normal",
+    },
+    {
+      entry_number: 207,
+      name_ja: "グライガー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/207.png",
+      types: "ground,flying",
+    },
+    {
+      entry_number: 208,
+      name_ja: "ハガネール",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/208.png",
+      types: "steel,ground",
+    },
+    {
+      entry_number: 209,
+      name_ja: "ブルー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/209.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 210,
+      name_ja: "グランブル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/210.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 211,
+      name_ja: "ハリーセン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/211.png",
+      types: "water,poison",
+    },
+    {
+      entry_number: 212,
+      name_ja: "ハッサム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/212.png",
+      types: "bug,steel",
+    },
+    {
+      entry_number: 213,
+      name_ja: "ツボツボ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/213.png",
+      types: "bug,rock",
+    },
+    {
+      entry_number: 214,
+      name_ja: "ヘラクロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/214.png",
+      types: "bug,fighting",
+    },
+    {
+      entry_number: 215,
+      name_ja: "ニューラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/215.png",
+      types: "dark,ice",
+    },
+    {
+      entry_number: 216,
+      name_ja: "ヒメグマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/216.png",
+      types: "normal",
+    },
+    {
+      entry_number: 217,
+      name_ja: "リングマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/217.png",
+      types: "normal",
+    },
+    {
+      entry_number: 218,
+      name_ja: "マグマッグ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/218.png",
+      types: "fire",
+    },
+    {
+      entry_number: 219,
+      name_ja: "マグカルゴ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/219.png",
+      types: "fire,rock",
+    },
+    {
+      entry_number: 220,
+      name_ja: "ウリムー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/220.png",
+      types: "ice,ground",
+    },
+    {
+      entry_number: 221,
+      name_ja: "イノムー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/221.png",
+      types: "ice,ground",
+    },
+    {
+      entry_number: 222,
+      name_ja: "サニーゴ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/222.png",
+      types: "water,rock",
+    },
+    {
+      entry_number: 223,
+      name_ja: "テッポウオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/223.png",
+      types: "water",
+    },
+    {
+      entry_number: 224,
+      name_ja: "オクタン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/224.png",
+      types: "water",
+    },
+    {
+      entry_number: 225,
+      name_ja: "デリバード",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/225.png",
+      types: "ice,flying",
+    },
+    {
+      entry_number: 226,
+      name_ja: "マンタイン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/226.png",
+      types: "water,flying",
+    },
+    {
+      entry_number: 227,
+      name_ja: "エアームド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/227.png",
+      types: "steel,flying",
+    },
+    {
+      entry_number: 228,
+      name_ja: "デルビル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/228.png",
+      types: "dark,fire",
+    },
+    {
+      entry_number: 229,
+      name_ja: "ヘルガー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/229.png",
+      types: "dark,fire",
+    },
+    {
+      entry_number: 230,
+      name_ja: "キングドラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/230.png",
+      types: "water,dragon",
+    },
+    {
+      entry_number: 231,
+      name_ja: "ゴマゾウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/231.png",
+      types: "ground",
+    },
+    {
+      entry_number: 232,
+      name_ja: "ドンファン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png",
+      types: "ground",
+    },
+    {
+      entry_number: 233,
+      name_ja: "ポリゴン２",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/233.png",
+      types: "normal",
+    },
+    {
+      entry_number: 234,
+      name_ja: "オドシシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/234.png",
+      types: "normal",
+    },
+    {
+      entry_number: 235,
+      name_ja: "ドーブル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/235.png",
+      types: "normal",
+    },
+    {
+      entry_number: 236,
+      name_ja: "バルキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/236.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 237,
+      name_ja: "カポエラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/237.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 238,
+      name_ja: "ムチュール",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/238.png",
+      types: "ice,psychic",
+    },
+    {
+      entry_number: 239,
+      name_ja: "エレキッド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/239.png",
+      types: "electric",
+    },
+    {
+      entry_number: 240,
+      name_ja: "ブビィ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/240.png",
+      types: "fire",
+    },
+    {
+      entry_number: 241,
+      name_ja: "ミルタンク",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/241.png",
+      types: "normal",
+    },
+    {
+      entry_number: 242,
+      name_ja: "ハピナス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/242.png",
+      types: "normal",
+    },
+    {
+      entry_number: 243,
+      name_ja: "ライコウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/243.png",
+      types: "electric",
+    },
+    {
+      entry_number: 244,
+      name_ja: "エンテイ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/244.png",
+      types: "fire",
+    },
+    {
+      entry_number: 245,
+      name_ja: "スイクン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/245.png",
+      types: "water",
+    },
+    {
+      entry_number: 246,
+      name_ja: "ヨーギラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/246.png",
+      types: "rock,ground",
+    },
+    {
+      entry_number: 247,
+      name_ja: "サナギラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/247.png",
+      types: "rock,ground",
+    },
+    {
+      entry_number: 248,
+      name_ja: "バンギラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/248.png",
+      types: "rock,dark",
+    },
+    {
+      entry_number: 249,
+      name_ja: "ルギア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/249.png",
+      types: "psychic,flying",
+    },
+    {
+      entry_number: 250,
+      name_ja: "ホウオウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/250.png",
+      types: "fire,flying",
+    },
+    {
+      entry_number: 251,
+      name_ja: "セレビィ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/251.png",
+      types: "psychic,grass",
+    },
+    {
+      entry_number: 252,
+      name_ja: "キモリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/252.png",
+      types: "grass",
+    },
+    {
+      entry_number: 253,
+      name_ja: "ジュプトル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/253.png",
+      types: "grass",
+    },
+    {
+      entry_number: 254,
+      name_ja: "ジュカイン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/254.png",
+      types: "grass",
+    },
+    {
+      entry_number: 255,
+      name_ja: "アチャモ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/255.png",
+      types: "fire",
+    },
+    {
+      entry_number: 256,
+      name_ja: "ワカシャモ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/256.png",
+      types: "fire,fighting",
+    },
+    {
+      entry_number: 257,
+      name_ja: "バシャーモ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/257.png",
+      types: "fire,fighting",
+    },
+    {
+      entry_number: 258,
+      name_ja: "ミズゴロウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/258.png",
+      types: "water",
+    },
+    {
+      entry_number: 259,
+      name_ja: "ヌマクロー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/259.png",
+      types: "water,ground",
+    },
+    {
+      entry_number: 260,
+      name_ja: "ラグラージ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/260.png",
+      types: "water,ground",
+    },
+    {
+      entry_number: 261,
+      name_ja: "ポチエナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/261.png",
+      types: "dark",
+    },
+    {
+      entry_number: 262,
+      name_ja: "グラエナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/262.png",
+      types: "dark",
+    },
+    {
+      entry_number: 263,
+      name_ja: "ジグザグマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/263.png",
+      types: "normal",
+    },
+    {
+      entry_number: 264,
+      name_ja: "マッスグマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/264.png",
+      types: "normal",
+    },
+    {
+      entry_number: 265,
+      name_ja: "ケムッソ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/265.png",
+      types: "bug",
+    },
+    {
+      entry_number: 266,
+      name_ja: "カラサリス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/266.png",
+      types: "bug",
+    },
+    {
+      entry_number: 267,
+      name_ja: "アゲハント",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/267.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 268,
+      name_ja: "マユルド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/268.png",
+      types: "bug",
+    },
+    {
+      entry_number: 269,
+      name_ja: "ドクケイル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/269.png",
+      types: "bug,poison",
+    },
+    {
+      entry_number: 270,
+      name_ja: "ハスボー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/270.png",
+      types: "water,grass",
+    },
+    {
+      entry_number: 271,
+      name_ja: "ハスブレロ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/271.png",
+      types: "water,grass",
+    },
+    {
+      entry_number: 272,
+      name_ja: "ルンパッパ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/272.png",
+      types: "water,grass",
+    },
+    {
+      entry_number: 273,
+      name_ja: "タネボー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/273.png",
+      types: "grass",
+    },
+    {
+      entry_number: 274,
+      name_ja: "コノハナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/274.png",
+      types: "grass,dark",
+    },
+    {
+      entry_number: 275,
+      name_ja: "ダーテング",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/275.png",
+      types: "grass,dark",
+    },
+    {
+      entry_number: 276,
+      name_ja: "スバメ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/276.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 277,
+      name_ja: "オオスバメ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/277.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 278,
+      name_ja: "キャモメ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/278.png",
+      types: "water,flying",
+    },
+    {
+      entry_number: 279,
+      name_ja: "ペリッパー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png",
+      types: "water,flying",
+    },
+    {
+      entry_number: 280,
+      name_ja: "ラルトス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/280.png",
+      types: "psychic,fairy",
+    },
+    {
+      entry_number: 281,
+      name_ja: "キルリア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/281.png",
+      types: "psychic,fairy",
+    },
+    {
+      entry_number: 282,
+      name_ja: "サーナイト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png",
+      types: "psychic,fairy",
+    },
+    {
+      entry_number: 283,
+      name_ja: "アメタマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/283.png",
+      types: "bug,water",
+    },
+    {
+      entry_number: 284,
+      name_ja: "アメモース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/284.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 285,
+      name_ja: "キノココ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/285.png",
+      types: "grass",
+    },
+    {
+      entry_number: 286,
+      name_ja: "キノガッサ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/286.png",
+      types: "grass,fighting",
+    },
+    {
+      entry_number: 287,
+      name_ja: "ナマケロ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/287.png",
+      types: "normal",
+    },
+    {
+      entry_number: 288,
+      name_ja: "ヤルキモノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/288.png",
+      types: "normal",
+    },
+    {
+      entry_number: 289,
+      name_ja: "ケッキング",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png",
+      types: "normal",
+    },
+    {
+      entry_number: 290,
+      name_ja: "ツチニン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/290.png",
+      types: "bug,ground",
+    },
+    {
+      entry_number: 291,
+      name_ja: "テッカニン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/291.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 292,
+      name_ja: "ヌケニン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/292.png",
+      types: "bug,ghost",
+    },
+    {
+      entry_number: 293,
+      name_ja: "ゴニョニョ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/293.png",
+      types: "normal",
+    },
+    {
+      entry_number: 294,
+      name_ja: "ドゴーム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/294.png",
+      types: "normal",
+    },
+    {
+      entry_number: 295,
+      name_ja: "バクオング",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/295.png",
+      types: "normal",
+    },
+    {
+      entry_number: 296,
+      name_ja: "マクノシタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/296.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 297,
+      name_ja: "ハリテヤマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/297.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 298,
+      name_ja: "ルリリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/298.png",
+      types: "normal,fairy",
+    },
+    {
+      entry_number: 299,
+      name_ja: "ノズパス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/299.png",
+      types: "rock",
+    },
+    {
+      entry_number: 300,
+      name_ja: "エネコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/300.png",
+      types: "normal",
+    },
+    {
+      entry_number: 301,
+      name_ja: "エネコロロ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png",
+      types: "normal",
+    },
+    {
+      entry_number: 302,
+      name_ja: "ヤミラミ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png",
+      types: "dark,ghost",
+    },
+    {
+      entry_number: 303,
+      name_ja: "クチート",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png",
+      types: "steel,fairy",
+    },
+    {
+      entry_number: 304,
+      name_ja: "ココドラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/304.png",
+      types: "steel,rock",
+    },
+    {
+      entry_number: 305,
+      name_ja: "コドラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/305.png",
+      types: "steel,rock",
+    },
+    {
+      entry_number: 306,
+      name_ja: "ボスゴドラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/306.png",
+      types: "steel,rock",
+    },
+    {
+      entry_number: 307,
+      name_ja: "アサナン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/307.png",
+      types: "fighting,psychic",
+    },
+    {
+      entry_number: 308,
+      name_ja: "チャーレム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/308.png",
+      types: "fighting,psychic",
+    },
+    {
+      entry_number: 309,
+      name_ja: "ラクライ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/309.png",
+      types: "electric",
+    },
+    {
+      entry_number: 310,
+      name_ja: "ライボルト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/310.png",
+      types: "electric",
+    },
+    {
+      entry_number: 311,
+      name_ja: "プラスル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/311.png",
+      types: "electric",
+    },
+    {
+      entry_number: 312,
+      name_ja: "マイナン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/312.png",
+      types: "electric",
+    },
+    {
+      entry_number: 313,
+      name_ja: "バルビート",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/313.png",
+      types: "bug",
+    },
+    {
+      entry_number: 314,
+      name_ja: "イルミーゼ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/314.png",
+      types: "bug",
+    },
+    {
+      entry_number: 315,
+      name_ja: "ロゼリア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/315.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 316,
+      name_ja: "ゴクリン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/316.png",
+      types: "poison",
+    },
+    {
+      entry_number: 317,
+      name_ja: "マルノーム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/317.png",
+      types: "poison",
+    },
+    {
+      entry_number: 318,
+      name_ja: "キバニア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/318.png",
+      types: "water,dark",
+    },
+    {
+      entry_number: 319,
+      name_ja: "サメハダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/319.png",
+      types: "water,dark",
+    },
+    {
+      entry_number: 320,
+      name_ja: "ホエルコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/320.png",
+      types: "water",
+    },
+    {
+      entry_number: 321,
+      name_ja: "ホエルオー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/321.png",
+      types: "water",
+    },
+    {
+      entry_number: 322,
+      name_ja: "ドンメル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/322.png",
+      types: "fire,ground",
+    },
+    {
+      entry_number: 323,
+      name_ja: "バクーダ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/323.png",
+      types: "fire,ground",
+    },
+    {
+      entry_number: 324,
+      name_ja: "コータス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/324.png",
+      types: "fire",
+    },
+    {
+      entry_number: 325,
+      name_ja: "バネブー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/325.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 326,
+      name_ja: "ブーピッグ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/326.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 327,
+      name_ja: "パッチール",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/327.png",
+      types: "normal",
+    },
+    {
+      entry_number: 328,
+      name_ja: "ナックラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/328.png",
+      types: "ground",
+    },
+    {
+      entry_number: 329,
+      name_ja: "ビブラーバ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/329.png",
+      types: "ground,dragon",
+    },
+    {
+      entry_number: 330,
+      name_ja: "フライゴン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/330.png",
+      types: "ground,dragon",
+    },
+    {
+      entry_number: 331,
+      name_ja: "サボネア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/331.png",
+      types: "grass",
+    },
+    {
+      entry_number: 332,
+      name_ja: "ノクタス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/332.png",
+      types: "grass,dark",
+    },
+    {
+      entry_number: 333,
+      name_ja: "チルット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/333.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 334,
+      name_ja: "チルタリス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/334.png",
+      types: "dragon,flying",
+    },
+    {
+      entry_number: 335,
+      name_ja: "ザングース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/335.png",
+      types: "normal",
+    },
+    {
+      entry_number: 336,
+      name_ja: "ハブネーク",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/336.png",
+      types: "poison",
+    },
+    {
+      entry_number: 337,
+      name_ja: "ルナトーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/337.png",
+      types: "rock,psychic",
+    },
+    {
+      entry_number: 338,
+      name_ja: "ソルロック",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/338.png",
+      types: "rock,psychic",
+    },
+    {
+      entry_number: 339,
+      name_ja: "ドジョッチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/339.png",
+      types: "water,ground",
+    },
+    {
+      entry_number: 340,
+      name_ja: "ナマズン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/340.png",
+      types: "water,ground",
+    },
+    {
+      entry_number: 341,
+      name_ja: "ヘイガニ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/341.png",
+      types: "water",
+    },
+    {
+      entry_number: 342,
+      name_ja: "シザリガー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/342.png",
+      types: "water,dark",
+    },
+    {
+      entry_number: 343,
+      name_ja: "ヤジロン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/343.png",
+      types: "ground,psychic",
+    },
+    {
+      entry_number: 344,
+      name_ja: "ネンドール",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/344.png",
+      types: "ground,psychic",
+    },
+    {
+      entry_number: 345,
+      name_ja: "リリーラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/345.png",
+      types: "rock,grass",
+    },
+    {
+      entry_number: 346,
+      name_ja: "ユレイドル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/346.png",
+      types: "rock,grass",
+    },
+    {
+      entry_number: 347,
+      name_ja: "アノプス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/347.png",
+      types: "rock,bug",
+    },
+    {
+      entry_number: 348,
+      name_ja: "アーマルド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/348.png",
+      types: "rock,bug",
+    },
+    {
+      entry_number: 349,
+      name_ja: "ヒンバス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/349.png",
+      types: "water",
+    },
+    {
+      entry_number: 350,
+      name_ja: "ミロカロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png",
+      types: "water",
+    },
+    {
+      entry_number: 351,
+      name_ja: "ポワルン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/351.png",
+      types: "normal",
+    },
+    {
+      entry_number: 352,
+      name_ja: "カクレオン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/352.png",
+      types: "normal",
+    },
+    {
+      entry_number: 353,
+      name_ja: "カゲボウズ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/353.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 354,
+      name_ja: "ジュペッタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/354.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 355,
+      name_ja: "ヨマワル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/355.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 356,
+      name_ja: "サマヨール",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/356.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 357,
+      name_ja: "トロピウス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/357.png",
+      types: "grass,flying",
+    },
+    {
+      entry_number: 358,
+      name_ja: "チリーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/358.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 359,
+      name_ja: "アブソル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png",
+      types: "dark",
+    },
+    {
+      entry_number: 360,
+      name_ja: "ソーナノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/360.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 361,
+      name_ja: "ユキワラシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/361.png",
+      types: "ice",
+    },
+    {
+      entry_number: 362,
+      name_ja: "オニゴーリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/362.png",
+      types: "ice",
+    },
+    {
+      entry_number: 363,
+      name_ja: "タマザラシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/363.png",
+      types: "ice,water",
+    },
+    {
+      entry_number: 364,
+      name_ja: "トドグラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/364.png",
+      types: "ice,water",
+    },
+    {
+      entry_number: 365,
+      name_ja: "トドゼルガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/365.png",
+      types: "ice,water",
+    },
+    {
+      entry_number: 366,
+      name_ja: "パールル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/366.png",
+      types: "water",
+    },
+    {
+      entry_number: 367,
+      name_ja: "ハンテール",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/367.png",
+      types: "water",
+    },
+    {
+      entry_number: 368,
+      name_ja: "サクラビス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/368.png",
+      types: "water",
+    },
+    {
+      entry_number: 369,
+      name_ja: "ジーランス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/369.png",
+      types: "water,rock",
+    },
+    {
+      entry_number: 370,
+      name_ja: "ラブカス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png",
+      types: "water",
+    },
+    {
+      entry_number: 371,
+      name_ja: "タツベイ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/371.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 372,
+      name_ja: "コモルー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/372.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 373,
+      name_ja: "ボーマンダ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/373.png",
+      types: "dragon,flying",
+    },
+    {
+      entry_number: 374,
+      name_ja: "ダンバル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/374.png",
+      types: "steel,psychic",
+    },
+    {
+      entry_number: 375,
+      name_ja: "メタング",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/375.png",
+      types: "steel,psychic",
+    },
+    {
+      entry_number: 376,
+      name_ja: "メタグロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/376.png",
+      types: "steel,psychic",
+    },
+    {
+      entry_number: 377,
+      name_ja: "レジロック",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/377.png",
+      types: "rock",
+    },
+    {
+      entry_number: 378,
+      name_ja: "レジアイス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/378.png",
+      types: "ice",
+    },
+    {
+      entry_number: 379,
+      name_ja: "レジスチル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/379.png",
+      types: "steel",
+    },
+    {
+      entry_number: 380,
+      name_ja: "ラティアス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/380.png",
+      types: "dragon,psychic",
+    },
+    {
+      entry_number: 381,
+      name_ja: "ラティオス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/381.png",
+      types: "dragon,psychic",
+    },
+    {
+      entry_number: 382,
+      name_ja: "カイオーガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/382.png",
+      types: "water",
+    },
+    {
+      entry_number: 383,
+      name_ja: "グラードン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/383.png",
+      types: "ground",
+    },
+    {
+      entry_number: 384,
+      name_ja: "レックウザ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png",
+      types: "dragon,flying",
+    },
+    {
+      entry_number: 385,
+      name_ja: "ジラーチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png",
+      types: "steel,psychic",
+    },
+    {
+      entry_number: 386,
+      name_ja: "デオキシス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 387,
+      name_ja: "ナエトル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/387.png",
+      types: "grass",
+    },
+    {
+      entry_number: 388,
+      name_ja: "ハヤシガメ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/388.png",
+      types: "grass",
+    },
+    {
+      entry_number: 389,
+      name_ja: "ドダイトス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/389.png",
+      types: "grass,ground",
+    },
+    {
+      entry_number: 390,
+      name_ja: "ヒコザル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/390.png",
+      types: "fire",
+    },
+    {
+      entry_number: 391,
+      name_ja: "モウカザル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/391.png",
+      types: "fire,fighting",
+    },
+    {
+      entry_number: 392,
+      name_ja: "ゴウカザル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/392.png",
+      types: "fire,fighting",
+    },
+    {
+      entry_number: 393,
+      name_ja: "ポッチャマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/393.png",
+      types: "water",
+    },
+    {
+      entry_number: 394,
+      name_ja: "ポッタイシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/394.png",
+      types: "water",
+    },
+    {
+      entry_number: 395,
+      name_ja: "エンペルト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/395.png",
+      types: "water,steel",
+    },
+    {
+      entry_number: 396,
+      name_ja: "ムックル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/396.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 397,
+      name_ja: "ムクバード",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/397.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 398,
+      name_ja: "ムクホーク",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/398.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 399,
+      name_ja: "ビッパ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/399.png",
+      types: "normal",
+    },
+    {
+      entry_number: 400,
+      name_ja: "ビーダル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/400.png",
+      types: "normal,water",
+    },
+    {
+      entry_number: 401,
+      name_ja: "コロボーシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/401.png",
+      types: "bug",
+    },
+    {
+      entry_number: 402,
+      name_ja: "コロトック",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/402.png",
+      types: "bug",
+    },
+    {
+      entry_number: 403,
+      name_ja: "コリンク",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/403.png",
+      types: "electric",
+    },
+    {
+      entry_number: 404,
+      name_ja: "ルクシオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/404.png",
+      types: "electric",
+    },
+    {
+      entry_number: 405,
+      name_ja: "レントラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/405.png",
+      types: "electric",
+    },
+    {
+      entry_number: 406,
+      name_ja: "スボミー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/406.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 407,
+      name_ja: "ロズレイド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/407.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 408,
+      name_ja: "ズガイドス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/408.png",
+      types: "rock",
+    },
+    {
+      entry_number: 409,
+      name_ja: "ラムパルド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/409.png",
+      types: "rock",
+    },
+    {
+      entry_number: 410,
+      name_ja: "タテトプス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/410.png",
+      types: "rock,steel",
+    },
+    {
+      entry_number: 411,
+      name_ja: "トリデプス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/411.png",
+      types: "rock,steel",
+    },
+    {
+      entry_number: 412,
+      name_ja: "ミノムッチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/412.png",
+      types: "bug",
+    },
+    {
+      entry_number: 413,
+      name_ja: "ミノマダム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/413.png",
+      types: "bug,grass",
+    },
+    {
+      entry_number: 414,
+      name_ja: "ガーメイル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/414.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 415,
+      name_ja: "ミツハニー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/415.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 416,
+      name_ja: "ビークイン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/416.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 417,
+      name_ja: "パチリス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/417.png",
+      types: "electric",
+    },
+    {
+      entry_number: 418,
+      name_ja: "ブイゼル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/418.png",
+      types: "water",
+    },
+    {
+      entry_number: 419,
+      name_ja: "フローゼル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/419.png",
+      types: "water",
+    },
+    {
+      entry_number: 420,
+      name_ja: "チェリンボ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/420.png",
+      types: "grass",
+    },
+    {
+      entry_number: 421,
+      name_ja: "チェリム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/421.png",
+      types: "grass",
+    },
+    {
+      entry_number: 422,
+      name_ja: "カラナクシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/422.png",
+      types: "water",
+    },
+    {
+      entry_number: 423,
+      name_ja: "トリトドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/423.png",
+      types: "water,ground",
+    },
+    {
+      entry_number: 424,
+      name_ja: "エテボース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/424.png",
+      types: "normal",
+    },
+    {
+      entry_number: 425,
+      name_ja: "フワンテ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/425.png",
+      types: "ghost,flying",
+    },
+    {
+      entry_number: 426,
+      name_ja: "フワライド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/426.png",
+      types: "ghost,flying",
+    },
+    {
+      entry_number: 427,
+      name_ja: "ミミロル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/427.png",
+      types: "normal",
+    },
+    {
+      entry_number: 428,
+      name_ja: "ミミロップ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/428.png",
+      types: "normal",
+    },
+    {
+      entry_number: 429,
+      name_ja: "ムウマージ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/429.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 430,
+      name_ja: "ドンカラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/430.png",
+      types: "dark,flying",
+    },
+    {
+      entry_number: 431,
+      name_ja: "ニャルマー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/431.png",
+      types: "normal",
+    },
+    {
+      entry_number: 432,
+      name_ja: "ブニャット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/432.png",
+      types: "normal",
+    },
+    {
+      entry_number: 433,
+      name_ja: "リーシャン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/433.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 434,
+      name_ja: "スカンプー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/434.png",
+      types: "poison,dark",
+    },
+    {
+      entry_number: 435,
+      name_ja: "スカタンク",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/435.png",
+      types: "poison,dark",
+    },
+    {
+      entry_number: 436,
+      name_ja: "ドーミラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/436.png",
+      types: "steel,psychic",
+    },
+    {
+      entry_number: 437,
+      name_ja: "ドータクン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/437.png",
+      types: "steel,psychic",
+    },
+    {
+      entry_number: 438,
+      name_ja: "ウソハチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/438.png",
+      types: "rock",
+    },
+    {
+      entry_number: 439,
+      name_ja: "マネネ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/439.png",
+      types: "psychic,fairy",
+    },
+    {
+      entry_number: 440,
+      name_ja: "ピンプク",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/440.png",
+      types: "normal",
+    },
+    {
+      entry_number: 441,
+      name_ja: "ペラップ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/441.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 442,
+      name_ja: "ミカルゲ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/442.png",
+      types: "ghost,dark",
+    },
+    {
+      entry_number: 443,
+      name_ja: "フカマル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/443.png",
+      types: "dragon,ground",
+    },
+    {
+      entry_number: 444,
+      name_ja: "ガバイト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/444.png",
+      types: "dragon,ground",
+    },
+    {
+      entry_number: 445,
+      name_ja: "ガブリアス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png",
+      types: "dragon,ground",
+    },
+    {
+      entry_number: 446,
+      name_ja: "ゴンベ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/446.png",
+      types: "normal",
+    },
+    {
+      entry_number: 447,
+      name_ja: "リオル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 448,
+      name_ja: "ルカリオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
+      types: "fighting,steel",
+    },
+    {
+      entry_number: 449,
+      name_ja: "ヒポポタス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/449.png",
+      types: "ground",
+    },
+    {
+      entry_number: 450,
+      name_ja: "カバルドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/450.png",
+      types: "ground",
+    },
+    {
+      entry_number: 451,
+      name_ja: "スコルピ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/451.png",
+      types: "poison,bug",
+    },
+    {
+      entry_number: 452,
+      name_ja: "ドラピオン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/452.png",
+      types: "poison,dark",
+    },
+    {
+      entry_number: 453,
+      name_ja: "グレッグル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/453.png",
+      types: "poison,fighting",
+    },
+    {
+      entry_number: 454,
+      name_ja: "ドクロッグ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/454.png",
+      types: "poison,fighting",
+    },
+    {
+      entry_number: 455,
+      name_ja: "マスキッパ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/455.png",
+      types: "grass",
+    },
+    {
+      entry_number: 456,
+      name_ja: "ケイコウオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/456.png",
+      types: "water",
+    },
+    {
+      entry_number: 457,
+      name_ja: "ネオラント",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/457.png",
+      types: "water",
+    },
+    {
+      entry_number: 458,
+      name_ja: "タマンタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/458.png",
+      types: "water,flying",
+    },
+    {
+      entry_number: 459,
+      name_ja: "ユキカブリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/459.png",
+      types: "grass,ice",
+    },
+    {
+      entry_number: 460,
+      name_ja: "ユキノオー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/460.png",
+      types: "grass,ice",
+    },
+    {
+      entry_number: 461,
+      name_ja: "マニューラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/461.png",
+      types: "dark,ice",
+    },
+    {
+      entry_number: 462,
+      name_ja: "ジバコイル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/462.png",
+      types: "electric,steel",
+    },
+    {
+      entry_number: 463,
+      name_ja: "ベロベルト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/463.png",
+      types: "normal",
+    },
+    {
+      entry_number: 464,
+      name_ja: "ドサイドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/464.png",
+      types: "ground,rock",
+    },
+    {
+      entry_number: 465,
+      name_ja: "モジャンボ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/465.png",
+      types: "grass",
+    },
+    {
+      entry_number: 466,
+      name_ja: "エレキブル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/466.png",
+      types: "electric",
+    },
+    {
+      entry_number: 467,
+      name_ja: "ブーバーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/467.png",
+      types: "fire",
+    },
+    {
+      entry_number: 468,
+      name_ja: "トゲキッス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/468.png",
+      types: "fairy,flying",
+    },
+    {
+      entry_number: 469,
+      name_ja: "メガヤンマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/469.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 470,
+      name_ja: "リーフィア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png",
+      types: "grass",
+    },
+    {
+      entry_number: 471,
+      name_ja: "グレイシア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png",
+      types: "ice",
+    },
+    {
+      entry_number: 472,
+      name_ja: "グライオン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/472.png",
+      types: "ground,flying",
+    },
+    {
+      entry_number: 473,
+      name_ja: "マンムー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/473.png",
+      types: "ice,ground",
+    },
+    {
+      entry_number: 474,
+      name_ja: "ポリゴンＺ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/474.png",
+      types: "normal",
+    },
+    {
+      entry_number: 475,
+      name_ja: "エルレイド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/475.png",
+      types: "psychic,fighting",
+    },
+    {
+      entry_number: 476,
+      name_ja: "ダイノーズ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/476.png",
+      types: "rock,steel",
+    },
+    {
+      entry_number: 477,
+      name_ja: "ヨノワール",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/477.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 478,
+      name_ja: "ユキメノコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/478.png",
+      types: "ice,ghost",
+    },
+    {
+      entry_number: 479,
+      name_ja: "ロトム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png",
+      types: "electric,ghost",
+    },
+    {
+      entry_number: 480,
+      name_ja: "ユクシー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/480.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 481,
+      name_ja: "エムリット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/481.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 482,
+      name_ja: "アグノム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/482.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 483,
+      name_ja: "ディアルガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/483.png",
+      types: "steel,dragon",
+    },
+    {
+      entry_number: 484,
+      name_ja: "パルキア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/484.png",
+      types: "water,dragon",
+    },
+    {
+      entry_number: 485,
+      name_ja: "ヒードラン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/485.png",
+      types: "fire,steel",
+    },
+    {
+      entry_number: 486,
+      name_ja: "レジギガス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/486.png",
+      types: "normal",
+    },
+    {
+      entry_number: 487,
+      name_ja: "ギラティナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/487.png",
+      types: "ghost,dragon",
+    },
+    {
+      entry_number: 488,
+      name_ja: "クレセリア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/488.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 489,
+      name_ja: "フィオネ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/489.png",
+      types: "water",
+    },
+    {
+      entry_number: 490,
+      name_ja: "マナフィ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/490.png",
+      types: "water",
+    },
+    {
+      entry_number: 491,
+      name_ja: "ダークライ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/491.png",
+      types: "dark",
+    },
+    {
+      entry_number: 492,
+      name_ja: "シェイミ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/492.png",
+      types: "grass",
+    },
+    {
+      entry_number: 493,
+      name_ja: "アルセウス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/493.png",
+      types: "normal",
+    },
+    {
+      entry_number: 494,
+      name_ja: "ビクティニ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/494.png",
+      types: "psychic,fire",
+    },
+    {
+      entry_number: 495,
+      name_ja: "ツタージャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/495.png",
+      types: "grass",
+    },
+    {
+      entry_number: 496,
+      name_ja: "ジャノビー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/496.png",
+      types: "grass",
+    },
+    {
+      entry_number: 497,
+      name_ja: "ジャローダ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/497.png",
+      types: "grass",
+    },
+    {
+      entry_number: 498,
+      name_ja: "ポカブ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/498.png",
+      types: "fire",
+    },
+    {
+      entry_number: 499,
+      name_ja: "チャオブー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/499.png",
+      types: "fire,fighting",
+    },
+    {
+      entry_number: 500,
+      name_ja: "エンブオー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/500.png",
+      types: "fire,fighting",
+    },
+    {
+      entry_number: 501,
+      name_ja: "ミジュマル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/501.png",
+      types: "water",
+    },
+    {
+      entry_number: 502,
+      name_ja: "フタチマル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/502.png",
+      types: "water",
+    },
+    {
+      entry_number: 503,
+      name_ja: "ダイケンキ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/503.png",
+      types: "water",
+    },
+    {
+      entry_number: 504,
+      name_ja: "ミネズミ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/504.png",
+      types: "normal",
+    },
+    {
+      entry_number: 505,
+      name_ja: "ミルホッグ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/505.png",
+      types: "normal",
+    },
+    {
+      entry_number: 506,
+      name_ja: "ヨーテリー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/506.png",
+      types: "normal",
+    },
+    {
+      entry_number: 507,
+      name_ja: "ハーデリア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/507.png",
+      types: "normal",
+    },
+    {
+      entry_number: 508,
+      name_ja: "ムーランド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/508.png",
+      types: "normal",
+    },
+    {
+      entry_number: 509,
+      name_ja: "チョロネコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/509.png",
+      types: "dark",
+    },
+    {
+      entry_number: 510,
+      name_ja: "レパルダス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/510.png",
+      types: "dark",
+    },
+    {
+      entry_number: 511,
+      name_ja: "ヤナップ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/511.png",
+      types: "grass",
+    },
+    {
+      entry_number: 512,
+      name_ja: "ヤナッキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/512.png",
+      types: "grass",
+    },
+    {
+      entry_number: 513,
+      name_ja: "バオップ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/513.png",
+      types: "fire",
+    },
+    {
+      entry_number: 514,
+      name_ja: "バオッキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/514.png",
+      types: "fire",
+    },
+    {
+      entry_number: 515,
+      name_ja: "ヒヤップ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/515.png",
+      types: "water",
+    },
+    {
+      entry_number: 516,
+      name_ja: "ヒヤッキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/516.png",
+      types: "water",
+    },
+    {
+      entry_number: 517,
+      name_ja: "ムンナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/517.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 518,
+      name_ja: "ムシャーナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/518.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 519,
+      name_ja: "マメパト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/519.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 520,
+      name_ja: "ハトーボー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/520.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 521,
+      name_ja: "ケンホロウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/521.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 522,
+      name_ja: "シママ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/522.png",
+      types: "electric",
+    },
+    {
+      entry_number: 523,
+      name_ja: "ゼブライカ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/523.png",
+      types: "electric",
+    },
+    {
+      entry_number: 524,
+      name_ja: "ダンゴロ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/524.png",
+      types: "rock",
+    },
+    {
+      entry_number: 525,
+      name_ja: "ガントル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/525.png",
+      types: "rock",
+    },
+    {
+      entry_number: 526,
+      name_ja: "ギガイアス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/526.png",
+      types: "rock",
+    },
+    {
+      entry_number: 527,
+      name_ja: "コロモリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/527.png",
+      types: "psychic,flying",
+    },
+    {
+      entry_number: 528,
+      name_ja: "ココロモリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/528.png",
+      types: "psychic,flying",
+    },
+    {
+      entry_number: 529,
+      name_ja: "モグリュー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/529.png",
+      types: "ground",
+    },
+    {
+      entry_number: 530,
+      name_ja: "ドリュウズ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/530.png",
+      types: "ground,steel",
+    },
+    {
+      entry_number: 531,
+      name_ja: "タブンネ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/531.png",
+      types: "normal",
+    },
+    {
+      entry_number: 532,
+      name_ja: "ドッコラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/532.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 533,
+      name_ja: "ドテッコツ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/533.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 534,
+      name_ja: "ローブシン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/534.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 535,
+      name_ja: "オタマロ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/535.png",
+      types: "water",
+    },
+    {
+      entry_number: 536,
+      name_ja: "ガマガル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/536.png",
+      types: "water,ground",
+    },
+    {
+      entry_number: 537,
+      name_ja: "ガマゲロゲ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/537.png",
+      types: "water,ground",
+    },
+    {
+      entry_number: 538,
+      name_ja: "ナゲキ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/538.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 539,
+      name_ja: "ダゲキ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/539.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 540,
+      name_ja: "クルミル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/540.png",
+      types: "bug,grass",
+    },
+    {
+      entry_number: 541,
+      name_ja: "クルマユ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/541.png",
+      types: "bug,grass",
+    },
+    {
+      entry_number: 542,
+      name_ja: "ハハコモリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/542.png",
+      types: "bug,grass",
+    },
+    {
+      entry_number: 543,
+      name_ja: "フシデ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/543.png",
+      types: "bug,poison",
+    },
+    {
+      entry_number: 544,
+      name_ja: "ホイーガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/544.png",
+      types: "bug,poison",
+    },
+    {
+      entry_number: 545,
+      name_ja: "ペンドラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/545.png",
+      types: "bug,poison",
+    },
+    {
+      entry_number: 546,
+      name_ja: "モンメン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/546.png",
+      types: "grass,fairy",
+    },
+    {
+      entry_number: 547,
+      name_ja: "エルフーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/547.png",
+      types: "grass,fairy",
+    },
+    {
+      entry_number: 548,
+      name_ja: "チュリネ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/548.png",
+      types: "grass",
+    },
+    {
+      entry_number: 549,
+      name_ja: "ドレディア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/549.png",
+      types: "grass",
+    },
+    {
+      entry_number: 550,
+      name_ja: "バスラオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/550.png",
+      types: "water",
+    },
+    {
+      entry_number: 551,
+      name_ja: "メグロコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/551.png",
+      types: "ground,dark",
+    },
+    {
+      entry_number: 552,
+      name_ja: "ワルビル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/552.png",
+      types: "ground,dark",
+    },
+    {
+      entry_number: 553,
+      name_ja: "ワルビアル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/553.png",
+      types: "ground,dark",
+    },
+    {
+      entry_number: 554,
+      name_ja: "ダルマッカ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/554.png",
+      types: "fire",
+    },
+    {
+      entry_number: 555,
+      name_ja: "ヒヒダルマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/555.png",
+      types: "fire",
+    },
+    {
+      entry_number: 556,
+      name_ja: "マラカッチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/556.png",
+      types: "grass",
+    },
+    {
+      entry_number: 557,
+      name_ja: "イシズマイ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/557.png",
+      types: "bug,rock",
+    },
+    {
+      entry_number: 558,
+      name_ja: "イワパレス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/558.png",
+      types: "bug,rock",
+    },
+    {
+      entry_number: 559,
+      name_ja: "ズルッグ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/559.png",
+      types: "dark,fighting",
+    },
+    {
+      entry_number: 560,
+      name_ja: "ズルズキン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/560.png",
+      types: "dark,fighting",
+    },
+    {
+      entry_number: 561,
+      name_ja: "シンボラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/561.png",
+      types: "psychic,flying",
+    },
+    {
+      entry_number: 562,
+      name_ja: "デスマス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/562.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 563,
+      name_ja: "デスカーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/563.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 564,
+      name_ja: "プロトーガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/564.png",
+      types: "water,rock",
+    },
+    {
+      entry_number: 565,
+      name_ja: "アバゴーラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/565.png",
+      types: "water,rock",
+    },
+    {
+      entry_number: 566,
+      name_ja: "アーケン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/566.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 567,
+      name_ja: "アーケオス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/567.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 568,
+      name_ja: "ヤブクロン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/568.png",
+      types: "poison",
+    },
+    {
+      entry_number: 569,
+      name_ja: "ダストダス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/569.png",
+      types: "poison",
+    },
+    {
+      entry_number: 570,
+      name_ja: "ゾロア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/570.png",
+      types: "dark",
+    },
+    {
+      entry_number: 571,
+      name_ja: "ゾロアーク",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/571.png",
+      types: "dark",
+    },
+    {
+      entry_number: 572,
+      name_ja: "チラーミィ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/572.png",
+      types: "normal",
+    },
+    {
+      entry_number: 573,
+      name_ja: "チラチーノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/573.png",
+      types: "normal",
+    },
+    {
+      entry_number: 574,
+      name_ja: "ゴチム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/574.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 575,
+      name_ja: "ゴチミル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/575.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 576,
+      name_ja: "ゴチルゼル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/576.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 577,
+      name_ja: "ユニラン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/577.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 578,
+      name_ja: "ダブラン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/578.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 579,
+      name_ja: "ランクルス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/579.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 580,
+      name_ja: "コアルヒー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/580.png",
+      types: "water,flying",
+    },
+    {
+      entry_number: 581,
+      name_ja: "スワンナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/581.png",
+      types: "water,flying",
+    },
+    {
+      entry_number: 582,
+      name_ja: "バニプッチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/582.png",
+      types: "ice",
+    },
+    {
+      entry_number: 583,
+      name_ja: "バニリッチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/583.png",
+      types: "ice",
+    },
+    {
+      entry_number: 584,
+      name_ja: "バイバニラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/584.png",
+      types: "ice",
+    },
+    {
+      entry_number: 585,
+      name_ja: "シキジカ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/585.png",
+      types: "normal,grass",
+    },
+    {
+      entry_number: 586,
+      name_ja: "メブキジカ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/586.png",
+      types: "normal,grass",
+    },
+    {
+      entry_number: 587,
+      name_ja: "エモンガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/587.png",
+      types: "electric,flying",
+    },
+    {
+      entry_number: 588,
+      name_ja: "カブルモ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/588.png",
+      types: "bug",
+    },
+    {
+      entry_number: 589,
+      name_ja: "シュバルゴ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/589.png",
+      types: "bug,steel",
+    },
+    {
+      entry_number: 590,
+      name_ja: "タマゲタケ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/590.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 591,
+      name_ja: "モロバレル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/591.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 592,
+      name_ja: "プルリル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/592.png",
+      types: "water,ghost",
+    },
+    {
+      entry_number: 593,
+      name_ja: "ブルンゲル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/593.png",
+      types: "water,ghost",
+    },
+    {
+      entry_number: 594,
+      name_ja: "ママンボウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/594.png",
+      types: "water",
+    },
+    {
+      entry_number: 595,
+      name_ja: "バチュル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/595.png",
+      types: "bug,electric",
+    },
+    {
+      entry_number: 596,
+      name_ja: "デンチュラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/596.png",
+      types: "bug,electric",
+    },
+    {
+      entry_number: 597,
+      name_ja: "テッシード",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/597.png",
+      types: "grass,steel",
+    },
+    {
+      entry_number: 598,
+      name_ja: "ナットレイ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/598.png",
+      types: "grass,steel",
+    },
+    {
+      entry_number: 599,
+      name_ja: "ギアル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/599.png",
+      types: "steel",
+    },
+    {
+      entry_number: 600,
+      name_ja: "ギギアル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/600.png",
+      types: "steel",
+    },
+    {
+      entry_number: 601,
+      name_ja: "ギギギアル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/601.png",
+      types: "steel",
+    },
+    {
+      entry_number: 602,
+      name_ja: "シビシラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/602.png",
+      types: "electric",
+    },
+    {
+      entry_number: 603,
+      name_ja: "シビビール",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/603.png",
+      types: "electric",
+    },
+    {
+      entry_number: 604,
+      name_ja: "シビルドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/604.png",
+      types: "electric",
+    },
+    {
+      entry_number: 605,
+      name_ja: "リグレー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/605.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 606,
+      name_ja: "オーベム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/606.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 607,
+      name_ja: "ヒトモシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/607.png",
+      types: "ghost,fire",
+    },
+    {
+      entry_number: 608,
+      name_ja: "ランプラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/608.png",
+      types: "ghost,fire",
+    },
+    {
+      entry_number: 609,
+      name_ja: "シャンデラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/609.png",
+      types: "ghost,fire",
+    },
+    {
+      entry_number: 610,
+      name_ja: "キバゴ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/610.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 611,
+      name_ja: "オノンド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/611.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 612,
+      name_ja: "オノノクス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/612.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 613,
+      name_ja: "クマシュン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/613.png",
+      types: "ice",
+    },
+    {
+      entry_number: 614,
+      name_ja: "ツンベアー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/614.png",
+      types: "ice",
+    },
+    {
+      entry_number: 615,
+      name_ja: "フリージオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/615.png",
+      types: "ice",
+    },
+    {
+      entry_number: 616,
+      name_ja: "チョボマキ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/616.png",
+      types: "bug",
+    },
+    {
+      entry_number: 617,
+      name_ja: "アギルダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/617.png",
+      types: "bug",
+    },
+    {
+      entry_number: 618,
+      name_ja: "マッギョ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/618.png",
+      types: "ground,electric",
+    },
+    {
+      entry_number: 619,
+      name_ja: "コジョフー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/619.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 620,
+      name_ja: "コジョンド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/620.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 621,
+      name_ja: "クリムガン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/621.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 622,
+      name_ja: "ゴビット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/622.png",
+      types: "ground,ghost",
+    },
+    {
+      entry_number: 623,
+      name_ja: "ゴルーグ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/623.png",
+      types: "ground,ghost",
+    },
+    {
+      entry_number: 624,
+      name_ja: "コマタナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/624.png",
+      types: "dark,steel",
+    },
+    {
+      entry_number: 625,
+      name_ja: "キリキザン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/625.png",
+      types: "dark,steel",
+    },
+    {
+      entry_number: 626,
+      name_ja: "バッフロン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/626.png",
+      types: "normal",
+    },
+    {
+      entry_number: 627,
+      name_ja: "ワシボン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/627.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 628,
+      name_ja: "ウォーグル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/628.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 629,
+      name_ja: "バルチャイ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/629.png",
+      types: "dark,flying",
+    },
+    {
+      entry_number: 630,
+      name_ja: "バルジーナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/630.png",
+      types: "dark,flying",
+    },
+    {
+      entry_number: 631,
+      name_ja: "クイタラン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/631.png",
+      types: "fire",
+    },
+    {
+      entry_number: 632,
+      name_ja: "アイアント",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/632.png",
+      types: "bug,steel",
+    },
+    {
+      entry_number: 633,
+      name_ja: "モノズ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/633.png",
+      types: "dark,dragon",
+    },
+    {
+      entry_number: 634,
+      name_ja: "ジヘッド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/634.png",
+      types: "dark,dragon",
+    },
+    {
+      entry_number: 635,
+      name_ja: "サザンドラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/635.png",
+      types: "dark,dragon",
+    },
+    {
+      entry_number: 636,
+      name_ja: "メラルバ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/636.png",
+      types: "bug,fire",
+    },
+    {
+      entry_number: 637,
+      name_ja: "ウルガモス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/637.png",
+      types: "bug,fire",
+    },
+    {
+      entry_number: 638,
+      name_ja: "コバルオン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/638.png",
+      types: "steel,fighting",
+    },
+    {
+      entry_number: 639,
+      name_ja: "テラキオン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/639.png",
+      types: "rock,fighting",
+    },
+    {
+      entry_number: 640,
+      name_ja: "ビリジオン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/640.png",
+      types: "grass,fighting",
+    },
+    {
+      entry_number: 641,
+      name_ja: "トルネロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/641.png",
+      types: "flying",
+    },
+    {
+      entry_number: 642,
+      name_ja: "ボルトロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/642.png",
+      types: "electric,flying",
+    },
+    {
+      entry_number: 643,
+      name_ja: "レシラム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/643.png",
+      types: "dragon,fire",
+    },
+    {
+      entry_number: 644,
+      name_ja: "ゼクロム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/644.png",
+      types: "dragon,electric",
+    },
+    {
+      entry_number: 645,
+      name_ja: "ランドロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/645.png",
+      types: "ground,flying",
+    },
+    {
+      entry_number: 646,
+      name_ja: "キュレム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/646.png",
+      types: "dragon,ice",
+    },
+    {
+      entry_number: 647,
+      name_ja: "ケルディオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/647.png",
+      types: "water,fighting",
+    },
+    {
+      entry_number: 648,
+      name_ja: "メロエッタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/648.png",
+      types: "normal,psychic",
+    },
+    {
+      entry_number: 649,
+      name_ja: "ゲノセクト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/649.png",
+      types: "bug,steel",
+    },
+    {
+      entry_number: 650,
+      name_ja: "ハリマロン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/650.png",
+      types: "grass",
+    },
+    {
+      entry_number: 651,
+      name_ja: "ハリボーグ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/651.png",
+      types: "grass",
+    },
+    {
+      entry_number: 652,
+      name_ja: "ブリガロン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/652.png",
+      types: "grass,fighting",
+    },
+    {
+      entry_number: 653,
+      name_ja: "フォッコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/653.png",
+      types: "fire",
+    },
+    {
+      entry_number: 654,
+      name_ja: "テールナー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/654.png",
+      types: "fire",
+    },
+    {
+      entry_number: 655,
+      name_ja: "マフォクシー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/655.png",
+      types: "fire,psychic",
+    },
+    {
+      entry_number: 656,
+      name_ja: "ケロマツ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/656.png",
+      types: "water",
+    },
+    {
+      entry_number: 657,
+      name_ja: "ゲコガシラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/657.png",
+      types: "water",
+    },
+    {
+      entry_number: 658,
+      name_ja: "ゲッコウガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/658.png",
+      types: "water,dark",
+    },
+    {
+      entry_number: 659,
+      name_ja: "ホルビー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/659.png",
+      types: "normal",
+    },
+    {
+      entry_number: 660,
+      name_ja: "ホルード",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/660.png",
+      types: "normal,ground",
+    },
+    {
+      entry_number: 661,
+      name_ja: "ヤヤコマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/661.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 662,
+      name_ja: "ヒノヤコマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/662.png",
+      types: "fire,flying",
+    },
+    {
+      entry_number: 663,
+      name_ja: "ファイアロー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/663.png",
+      types: "fire,flying",
+    },
+    {
+      entry_number: 664,
+      name_ja: "コフキムシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/664.png",
+      types: "bug",
+    },
+    {
+      entry_number: 665,
+      name_ja: "コフーライ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/665.png",
+      types: "bug",
+    },
+    {
+      entry_number: 666,
+      name_ja: "ビビヨン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/666.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 667,
+      name_ja: "シシコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/667.png",
+      types: "fire,normal",
+    },
+    {
+      entry_number: 668,
+      name_ja: "カエンジシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/668.png",
+      types: "fire,normal",
+    },
+    {
+      entry_number: 669,
+      name_ja: "フラベベ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/669.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 670,
+      name_ja: "フラエッテ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/670.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 671,
+      name_ja: "フラージェス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/671.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 672,
+      name_ja: "メェークル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/672.png",
+      types: "grass",
+    },
+    {
+      entry_number: 673,
+      name_ja: "ゴーゴート",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/673.png",
+      types: "grass",
+    },
+    {
+      entry_number: 674,
+      name_ja: "ヤンチャム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/674.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 675,
+      name_ja: "ゴロンダ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/675.png",
+      types: "fighting,dark",
+    },
+    {
+      entry_number: 676,
+      name_ja: "トリミアン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/676.png",
+      types: "normal",
+    },
+    {
+      entry_number: 677,
+      name_ja: "ニャスパー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/677.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 678,
+      name_ja: "ニャオニクス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/678.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 679,
+      name_ja: "ヒトツキ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/679.png",
+      types: "steel,ghost",
+    },
+    {
+      entry_number: 680,
+      name_ja: "ニダンギル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/680.png",
+      types: "steel,ghost",
+    },
+    {
+      entry_number: 681,
+      name_ja: "ギルガルド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/681.png",
+      types: "steel,ghost",
+    },
+    {
+      entry_number: 682,
+      name_ja: "シュシュプ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/682.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 683,
+      name_ja: "フレフワン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/683.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 684,
+      name_ja: "ペロッパフ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/684.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 685,
+      name_ja: "ペロリーム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/685.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 686,
+      name_ja: "マーイーカ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/686.png",
+      types: "dark,psychic",
+    },
+    {
+      entry_number: 687,
+      name_ja: "カラマネロ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/687.png",
+      types: "dark,psychic",
+    },
+    {
+      entry_number: 688,
+      name_ja: "カメテテ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/688.png",
+      types: "rock,water",
+    },
+    {
+      entry_number: 689,
+      name_ja: "ガメノデス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/689.png",
+      types: "rock,water",
+    },
+    {
+      entry_number: 690,
+      name_ja: "クズモー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/690.png",
+      types: "poison,water",
+    },
+    {
+      entry_number: 691,
+      name_ja: "ドラミドロ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/691.png",
+      types: "poison,dragon",
+    },
+    {
+      entry_number: 692,
+      name_ja: "ウデッポウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/692.png",
+      types: "water",
+    },
+    {
+      entry_number: 693,
+      name_ja: "ブロスター",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/693.png",
+      types: "water",
+    },
+    {
+      entry_number: 694,
+      name_ja: "エリキテル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/694.png",
+      types: "electric,normal",
+    },
+    {
+      entry_number: 695,
+      name_ja: "エレザード",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/695.png",
+      types: "electric,normal",
+    },
+    {
+      entry_number: 696,
+      name_ja: "チゴラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/696.png",
+      types: "rock,dragon",
+    },
+    {
+      entry_number: 697,
+      name_ja: "ガチゴラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/697.png",
+      types: "rock,dragon",
+    },
+    {
+      entry_number: 698,
+      name_ja: "アマルス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/698.png",
+      types: "rock,ice",
+    },
+    {
+      entry_number: 699,
+      name_ja: "アマルルガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/699.png",
+      types: "rock,ice",
+    },
+    {
+      entry_number: 700,
+      name_ja: "ニンフィア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 701,
+      name_ja: "ルチャブル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/701.png",
+      types: "fighting,flying",
+    },
+    {
+      entry_number: 702,
+      name_ja: "デデンネ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/702.png",
+      types: "electric,fairy",
+    },
+    {
+      entry_number: 703,
+      name_ja: "メレシー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/703.png",
+      types: "rock,fairy",
+    },
+    {
+      entry_number: 704,
+      name_ja: "ヌメラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/704.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 705,
+      name_ja: "ヌメイル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/705.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 706,
+      name_ja: "ヌメルゴン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/706.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 707,
+      name_ja: "クレッフィ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/707.png",
+      types: "steel,fairy",
+    },
+    {
+      entry_number: 708,
+      name_ja: "ボクレー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/708.png",
+      types: "ghost,grass",
+    },
+    {
+      entry_number: 709,
+      name_ja: "オーロット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/709.png",
+      types: "ghost,grass",
+    },
+    {
+      entry_number: 710,
+      name_ja: "バケッチャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/710.png",
+      types: "ghost,grass",
+    },
+    {
+      entry_number: 711,
+      name_ja: "パンプジン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/711.png",
+      types: "ghost,grass",
+    },
+    {
+      entry_number: 712,
+      name_ja: "カチコール",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/712.png",
+      types: "ice",
+    },
+    {
+      entry_number: 713,
+      name_ja: "クレベース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/713.png",
+      types: "ice",
+    },
+    {
+      entry_number: 714,
+      name_ja: "オンバット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/714.png",
+      types: "flying,dragon",
+    },
+    {
+      entry_number: 715,
+      name_ja: "オンバーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/715.png",
+      types: "flying,dragon",
+    },
+    {
+      entry_number: 716,
+      name_ja: "ゼルネアス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/716.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 717,
+      name_ja: "イベルタル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/717.png",
+      types: "dark,flying",
+    },
+    {
+      entry_number: 718,
+      name_ja: "ジガルデ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/718.png",
+      types: "dragon,ground",
+    },
+    {
+      entry_number: 719,
+      name_ja: "ディアンシー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/719.png",
+      types: "rock,fairy",
+    },
+    {
+      entry_number: 720,
+      name_ja: "フーパ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/720.png",
+      types: "psychic,ghost",
+    },
+    {
+      entry_number: 721,
+      name_ja: "ボルケニオン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/721.png",
+      types: "fire,water",
+    },
+    {
+      entry_number: 722,
+      name_ja: "モクロー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/722.png",
+      types: "grass,flying",
+    },
+    {
+      entry_number: 723,
+      name_ja: "フクスロー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/723.png",
+      types: "grass,flying",
+    },
+    {
+      entry_number: 724,
+      name_ja: "ジュナイパー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/724.png",
+      types: "grass,ghost",
+    },
+    {
+      entry_number: 725,
+      name_ja: "ニャビー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/725.png",
+      types: "fire",
+    },
+    {
+      entry_number: 726,
+      name_ja: "ニャヒート",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/726.png",
+      types: "fire",
+    },
+    {
+      entry_number: 727,
+      name_ja: "ガオガエン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/727.png",
+      types: "fire,dark",
+    },
+    {
+      entry_number: 728,
+      name_ja: "アシマリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/728.png",
+      types: "water",
+    },
+    {
+      entry_number: 729,
+      name_ja: "オシャマリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/729.png",
+      types: "water",
+    },
+    {
+      entry_number: 730,
+      name_ja: "アシレーヌ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/730.png",
+      types: "water,fairy",
+    },
+    {
+      entry_number: 731,
+      name_ja: "ツツケラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/731.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 732,
+      name_ja: "ケララッパ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/732.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 733,
+      name_ja: "ドデカバシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/733.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 734,
+      name_ja: "ヤングース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/734.png",
+      types: "normal",
+    },
+    {
+      entry_number: 735,
+      name_ja: "デカグース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/735.png",
+      types: "normal",
+    },
+    {
+      entry_number: 736,
+      name_ja: "アゴジムシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/736.png",
+      types: "bug",
+    },
+    {
+      entry_number: 737,
+      name_ja: "デンヂムシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/737.png",
+      types: "bug,electric",
+    },
+    {
+      entry_number: 738,
+      name_ja: "クワガノン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/738.png",
+      types: "bug,electric",
+    },
+    {
+      entry_number: 739,
+      name_ja: "マケンカニ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/739.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 740,
+      name_ja: "ケケンカニ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/740.png",
+      types: "fighting,ice",
+    },
+    {
+      entry_number: 741,
+      name_ja: "オドリドリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/741.png",
+      types: "fire,flying",
+    },
+    {
+      entry_number: 742,
+      name_ja: "アブリー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/742.png",
+      types: "bug,fairy",
+    },
+    {
+      entry_number: 743,
+      name_ja: "アブリボン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/743.png",
+      types: "bug,fairy",
+    },
+    {
+      entry_number: 744,
+      name_ja: "イワンコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/744.png",
+      types: "rock",
+    },
+    {
+      entry_number: 745,
+      name_ja: "ルガルガン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/745.png",
+      types: "rock",
+    },
+    {
+      entry_number: 746,
+      name_ja: "ヨワシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/746.png",
+      types: "water",
+    },
+    {
+      entry_number: 747,
+      name_ja: "ヒドイデ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/747.png",
+      types: "poison,water",
+    },
+    {
+      entry_number: 748,
+      name_ja: "ドヒドイデ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/748.png",
+      types: "poison,water",
+    },
+    {
+      entry_number: 749,
+      name_ja: "ドロバンコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/749.png",
+      types: "ground",
+    },
+    {
+      entry_number: 750,
+      name_ja: "バンバドロ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/750.png",
+      types: "ground",
+    },
+    {
+      entry_number: 751,
+      name_ja: "シズクモ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/751.png",
+      types: "water,bug",
+    },
+    {
+      entry_number: 752,
+      name_ja: "オニシズクモ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/752.png",
+      types: "water,bug",
+    },
+    {
+      entry_number: 753,
+      name_ja: "カリキリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/753.png",
+      types: "grass",
+    },
+    {
+      entry_number: 754,
+      name_ja: "ラランテス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/754.png",
+      types: "grass",
+    },
+    {
+      entry_number: 755,
+      name_ja: "ネマシュ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/755.png",
+      types: "grass,fairy",
+    },
+    {
+      entry_number: 756,
+      name_ja: "マシェード",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/756.png",
+      types: "grass,fairy",
+    },
+    {
+      entry_number: 757,
+      name_ja: "ヤトウモリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/757.png",
+      types: "poison,fire",
+    },
+    {
+      entry_number: 758,
+      name_ja: "エンニュート",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/758.png",
+      types: "poison,fire",
+    },
+    {
+      entry_number: 759,
+      name_ja: "ヌイコグマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/759.png",
+      types: "normal,fighting",
+    },
+    {
+      entry_number: 760,
+      name_ja: "キテルグマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/760.png",
+      types: "normal,fighting",
+    },
+    {
+      entry_number: 761,
+      name_ja: "アマカジ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/761.png",
+      types: "grass",
+    },
+    {
+      entry_number: 762,
+      name_ja: "アママイコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/762.png",
+      types: "grass",
+    },
+    {
+      entry_number: 763,
+      name_ja: "アマージョ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/763.png",
+      types: "grass",
+    },
+    {
+      entry_number: 764,
+      name_ja: "キュワワー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/764.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 765,
+      name_ja: "ヤレユータン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/765.png",
+      types: "normal,psychic",
+    },
+    {
+      entry_number: 766,
+      name_ja: "ナゲツケサル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/766.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 767,
+      name_ja: "コソクムシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/767.png",
+      types: "bug,water",
+    },
+    {
+      entry_number: 768,
+      name_ja: "グソクムシャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/768.png",
+      types: "bug,water",
+    },
+    {
+      entry_number: 769,
+      name_ja: "スナバァ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/769.png",
+      types: "ghost,ground",
+    },
+    {
+      entry_number: 770,
+      name_ja: "シロデスナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/770.png",
+      types: "ghost,ground",
+    },
+    {
+      entry_number: 771,
+      name_ja: "ナマコブシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/771.png",
+      types: "water",
+    },
+    {
+      entry_number: 772,
+      name_ja: "タイプ：ヌル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/772.png",
+      types: "normal",
+    },
+    {
+      entry_number: 773,
+      name_ja: "シルヴァディ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/773.png",
+      types: "normal",
+    },
+    {
+      entry_number: 774,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/774.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 775,
+      name_ja: "ネッコアラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/775.png",
+      types: "normal",
+    },
+    {
+      entry_number: 776,
+      name_ja: "バクガメス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/776.png",
+      types: "fire,dragon",
+    },
+    {
+      entry_number: 777,
+      name_ja: "トゲデマル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/777.png",
+      types: "electric,steel",
+    },
+    {
+      entry_number: 778,
+      name_ja: "ミミッキュ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/778.png",
+      types: "ghost,fairy",
+    },
+    {
+      entry_number: 779,
+      name_ja: "ハギギシリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/779.png",
+      types: "water,psychic",
+    },
+    {
+      entry_number: 780,
+      name_ja: "ジジーロン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/780.png",
+      types: "normal,dragon",
+    },
+    {
+      entry_number: 781,
+      name_ja: "ダダリン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/781.png",
+      types: "ghost,grass",
+    },
+    {
+      entry_number: 782,
+      name_ja: "ジャラコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/782.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 783,
+      name_ja: "ジャランゴ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/783.png",
+      types: "dragon,fighting",
+    },
+    {
+      entry_number: 784,
+      name_ja: "ジャラランガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/784.png",
+      types: "dragon,fighting",
+    },
+    {
+      entry_number: 785,
+      name_ja: "カプ・コケコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/785.png",
+      types: "electric,fairy",
+    },
+    {
+      entry_number: 786,
+      name_ja: "カプ・テテフ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/786.png",
+      types: "psychic,fairy",
+    },
+    {
+      entry_number: 787,
+      name_ja: "カプ・ブルル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/787.png",
+      types: "grass,fairy",
+    },
+    {
+      entry_number: 788,
+      name_ja: "カプ・レヒレ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/788.png",
+      types: "water,fairy",
+    },
+    {
+      entry_number: 789,
+      name_ja: "コスモッグ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/789.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 790,
+      name_ja: "コスモウム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/790.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 791,
+      name_ja: "ソルガレオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/791.png",
+      types: "psychic,steel",
+    },
+    {
+      entry_number: 792,
+      name_ja: "ルナアーラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/792.png",
+      types: "psychic,ghost",
+    },
+    {
+      entry_number: 793,
+      name_ja: "ウツロイド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/793.png",
+      types: "rock,poison",
+    },
+    {
+      entry_number: 794,
+      name_ja: "マッシブーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/794.png",
+      types: "bug,fighting",
+    },
+    {
+      entry_number: 795,
+      name_ja: "フェローチェ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/795.png",
+      types: "bug,fighting",
+    },
+    {
+      entry_number: 796,
+      name_ja: "デンジュモク",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/796.png",
+      types: "electric",
+    },
+    {
+      entry_number: 797,
+      name_ja: "テッカグヤ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/797.png",
+      types: "steel,flying",
+    },
+    {
+      entry_number: 798,
+      name_ja: "カミツルギ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/798.png",
+      types: "grass,steel",
+    },
+    {
+      entry_number: 799,
+      name_ja: "アクジキング",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/799.png",
+      types: "dark,dragon",
+    },
+    {
+      entry_number: 800,
+      name_ja: "ネクロズマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/800.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 801,
+      name_ja: "マギアナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/801.png",
+      types: "steel,fairy",
+    },
+    {
+      entry_number: 802,
+      name_ja: "マーシャドー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/802.png",
+      types: "fighting,ghost",
+    },
+    {
+      entry_number: 803,
+      name_ja: "ベベノム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/803.png",
+      types: "poison",
+    },
+    {
+      entry_number: 804,
+      name_ja: "アーゴヨン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/804.png",
+      types: "poison,dragon",
+    },
+    {
+      entry_number: 805,
+      name_ja: "ツンデツンデ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/805.png",
+      types: "rock,steel",
+    },
+    {
+      entry_number: 806,
+      name_ja: "ズガドーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/806.png",
+      types: "fire,ghost",
+    },
+    {
+      entry_number: 807,
+      name_ja: "ゼラオラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/807.png",
+      types: "electric",
+    },
+    {
+      entry_number: 808,
+      name_ja: "メルタン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/808.png",
+      types: "steel",
+    },
+    {
+      entry_number: 809,
+      name_ja: "メルメタル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/809.png",
+      types: "steel",
+    },
+    {
+      entry_number: 810,
+      name_ja: "サルノリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/810.png",
+      types: "grass",
+    },
+    {
+      entry_number: 811,
+      name_ja: "バチンキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/811.png",
+      types: "grass",
+    },
+    {
+      entry_number: 812,
+      name_ja: "ゴリランダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/812.png",
+      types: "grass",
+    },
+    {
+      entry_number: 813,
+      name_ja: "ヒバニー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/813.png",
+      types: "fire",
+    },
+    {
+      entry_number: 814,
+      name_ja: "ラビフット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/814.png",
+      types: "fire",
+    },
+    {
+      entry_number: 815,
+      name_ja: "エースバーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/815.png",
+      types: "fire",
+    },
+    {
+      entry_number: 816,
+      name_ja: "メッソン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/816.png",
+      types: "water",
+    },
+    {
+      entry_number: 817,
+      name_ja: "ジメレオン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/817.png",
+      types: "water",
+    },
+    {
+      entry_number: 818,
+      name_ja: "インテレオン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/818.png",
+      types: "water",
+    },
+    {
+      entry_number: 819,
+      name_ja: "ホシガリス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/819.png",
+      types: "normal",
+    },
+    {
+      entry_number: 820,
+      name_ja: "ヨクバリス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/820.png",
+      types: "normal",
+    },
+    {
+      entry_number: 821,
+      name_ja: "ココガラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/821.png",
+      types: "flying",
+    },
+    {
+      entry_number: 822,
+      name_ja: "アオガラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/822.png",
+      types: "flying",
+    },
+    {
+      entry_number: 823,
+      name_ja: "アーマーガア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png",
+      types: "flying,steel",
+    },
+    {
+      entry_number: 824,
+      name_ja: "サッチムシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/824.png",
+      types: "bug",
+    },
+    {
+      entry_number: 825,
+      name_ja: "レドームシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/825.png",
+      types: "bug,psychic",
+    },
+    {
+      entry_number: 826,
+      name_ja: "イオルブ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/826.png",
+      types: "bug,psychic",
+    },
+    {
+      entry_number: 827,
+      name_ja: "クスネ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/827.png",
+      types: "dark",
+    },
+    {
+      entry_number: 828,
+      name_ja: "フォクスライ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/828.png",
+      types: "dark",
+    },
+    {
+      entry_number: 829,
+      name_ja: "ヒメンカ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/829.png",
+      types: "grass",
+    },
+    {
+      entry_number: 830,
+      name_ja: "ワタシラガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/830.png",
+      types: "grass",
+    },
+    {
+      entry_number: 831,
+      name_ja: "ウールー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/831.png",
+      types: "normal",
+    },
+    {
+      entry_number: 832,
+      name_ja: "バイウールー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/832.png",
+      types: "normal",
+    },
+    {
+      entry_number: 833,
+      name_ja: "カムカメ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/833.png",
+      types: "water",
+    },
+    {
+      entry_number: 834,
+      name_ja: "カジリガメ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/834.png",
+      types: "water,rock",
+    },
+    {
+      entry_number: 835,
+      name_ja: "ワンパチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/835.png",
+      types: "electric",
+    },
+    {
+      entry_number: 836,
+      name_ja: "パルスワン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/836.png",
+      types: "electric",
+    },
+    {
+      entry_number: 837,
+      name_ja: "タンドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/837.png",
+      types: "rock",
+    },
+    {
+      entry_number: 838,
+      name_ja: "トロッゴン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/838.png",
+      types: "rock,fire",
+    },
+    {
+      entry_number: 839,
+      name_ja: "セキタンザン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/839.png",
+      types: "rock,fire",
+    },
+    {
+      entry_number: 840,
+      name_ja: "カジッチュ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/840.png",
+      types: "grass,dragon",
+    },
+    {
+      entry_number: 841,
+      name_ja: "アップリュー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/841.png",
+      types: "grass,dragon",
+    },
+    {
+      entry_number: 842,
+      name_ja: "タルップル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/842.png",
+      types: "grass,dragon",
+    },
+    {
+      entry_number: 843,
+      name_ja: "スナヘビ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/843.png",
+      types: "ground",
+    },
+    {
+      entry_number: 844,
+      name_ja: "サダイジャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/844.png",
+      types: "ground",
+    },
+    {
+      entry_number: 845,
+      name_ja: "ウッウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/845.png",
+      types: "flying,water",
+    },
+    {
+      entry_number: 846,
+      name_ja: "サシカマス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/846.png",
+      types: "water",
+    },
+    {
+      entry_number: 847,
+      name_ja: "カマスジョー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/847.png",
+      types: "water",
+    },
+    {
+      entry_number: 848,
+      name_ja: "エレズン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/848.png",
+      types: "electric,poison",
+    },
+    {
+      entry_number: 849,
+      name_ja: "ストリンダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/849.png",
+      types: "electric,poison",
+    },
+    {
+      entry_number: 850,
+      name_ja: "ヤクデ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/850.png",
+      types: "fire,bug",
+    },
+    {
+      entry_number: 851,
+      name_ja: "マルヤクデ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/851.png",
+      types: "fire,bug",
+    },
+    {
+      entry_number: 852,
+      name_ja: "タタッコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/852.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 853,
+      name_ja: "オトスパス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/853.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 854,
+      name_ja: "ヤバチャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/854.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 855,
+      name_ja: "ポットデス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/855.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 856,
+      name_ja: "ミブリム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/856.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 857,
+      name_ja: "テブリム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/857.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 858,
+      name_ja: "ブリムオン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/858.png",
+      types: "psychic,fairy",
+    },
+    {
+      entry_number: 859,
+      name_ja: "ベロバー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/859.png",
+      types: "dark,fairy",
+    },
+    {
+      entry_number: 860,
+      name_ja: "ギモー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/860.png",
+      types: "dark,fairy",
+    },
+    {
+      entry_number: 861,
+      name_ja: "オーロンゲ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/861.png",
+      types: "dark,fairy",
+    },
+    {
+      entry_number: 862,
+      name_ja: "タチフサグマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/862.png",
+      types: "dark,normal",
+    },
+    {
+      entry_number: 863,
+      name_ja: "ニャイキング",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/863.png",
+      types: "steel",
+    },
+    {
+      entry_number: 864,
+      name_ja: "サニゴーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/864.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 865,
+      name_ja: "ネギガナイト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/865.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 866,
+      name_ja: "バリコオル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/866.png",
+      types: "ice,psychic",
+    },
+    {
+      entry_number: 867,
+      name_ja: "デスバーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/867.png",
+      types: "ground,ghost",
+    },
+    {
+      entry_number: 868,
+      name_ja: "マホミル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/868.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 869,
+      name_ja: "マホイップ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/869.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 870,
+      name_ja: "タイレーツ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/870.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 871,
+      name_ja: "バチンウニ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/871.png",
+      types: "electric",
+    },
+    {
+      entry_number: 872,
+      name_ja: "ユキハミ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/872.png",
+      types: "ice,bug",
+    },
+    {
+      entry_number: 873,
+      name_ja: "モスノウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/873.png",
+      types: "ice,bug",
+    },
+    {
+      entry_number: 874,
+      name_ja: "イシヘンジン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/874.png",
+      types: "rock",
+    },
+    {
+      entry_number: 875,
+      name_ja: "コオリッポ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/875.png",
+      types: "ice",
+    },
+    {
+      entry_number: 876,
+      name_ja: "イエッサン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/876.png",
+      types: "psychic,normal",
+    },
+    {
+      entry_number: 877,
+      name_ja: "モルペコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/877.png",
+      types: "electric,dark",
+    },
+    {
+      entry_number: 878,
+      name_ja: "ゾウドウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/878.png",
+      types: "steel",
+    },
+    {
+      entry_number: 879,
+      name_ja: "ダイオウドウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/879.png",
+      types: "steel",
+    },
+    {
+      entry_number: 880,
+      name_ja: "パッチラゴン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/880.png",
+      types: "electric,dragon",
+    },
+    {
+      entry_number: 881,
+      name_ja: "パッチルドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/881.png",
+      types: "electric,ice",
+    },
+    {
+      entry_number: 882,
+      name_ja: "ウオノラゴン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/882.png",
+      types: "water,dragon",
+    },
+    {
+      entry_number: 883,
+      name_ja: "ウオチルドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/883.png",
+      types: "water,ice",
+    },
+    {
+      entry_number: 884,
+      name_ja: "ジュラルドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/884.png",
+      types: "steel,dragon",
+    },
+    {
+      entry_number: 885,
+      name_ja: "ドラメシヤ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/885.png",
+      types: "dragon,ghost",
+    },
+    {
+      entry_number: 886,
+      name_ja: "ドロンチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/886.png",
+      types: "dragon,ghost",
+    },
+    {
+      entry_number: 887,
+      name_ja: "ドラパルト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/887.png",
+      types: "dragon,ghost",
+    },
+    {
+      entry_number: 888,
+      name_ja: "ザシアン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/888.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 889,
+      name_ja: "ザマゼンタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/889.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 890,
+      name_ja: "ムゲンダイナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/890.png",
+      types: "poison,dragon",
+    },
+    {
+      entry_number: 891,
+      name_ja: "ダクマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/891.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 892,
+      name_ja: "ウーラオス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/892.png",
+      types: "fighting,dark",
+    },
+    {
+      entry_number: 893,
+      name_ja: "ザルード",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/893.png",
+      types: "dark,grass",
+    },
+    {
+      entry_number: 894,
+      name_ja: "レジエレキ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/894.png",
+      types: "electric",
+    },
+    {
+      entry_number: 895,
+      name_ja: "レジドラゴ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/895.png",
+      types: "dragon",
+    },
+    {
+      entry_number: 896,
+      name_ja: "ブリザポス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/896.png",
+      types: "ice",
+    },
+    {
+      entry_number: 897,
+      name_ja: "レイスポス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/897.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 898,
+      name_ja: "バドレックス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/898.png",
+      types: "psychic,grass",
+    },
+    {
+      entry_number: 899,
+      name_ja: "アヤシシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/899.png",
+      types: "normal,psychic",
+    },
+    {
+      entry_number: 900,
+      name_ja: "バサギリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/900.png",
+      types: "bug,rock",
+    },
+    {
+      entry_number: 901,
+      name_ja: "ガチグマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/901.png",
+      types: "ground,normal",
+    },
+    {
+      entry_number: 902,
+      name_ja: "イダイトウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/902.png",
+      types: "water,ghost",
+    },
+    {
+      entry_number: 903,
+      name_ja: "オオニューラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/903.png",
+      types: "fighting,poison",
+    },
+    {
+      entry_number: 904,
+      name_ja: "ハリーマン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/904.png",
+      types: "dark,poison",
+    },
+    {
+      entry_number: 905,
+      name_ja: "ラブトロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/905.png",
+      types: "fairy,flying",
+    },
+    {
+      entry_number: 906,
+      name_ja: "ニャオハ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/906.png",
+      types: "grass",
+    },
+    {
+      entry_number: 907,
+      name_ja: "ニャローテ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/907.png",
+      types: "grass",
+    },
+    {
+      entry_number: 908,
+      name_ja: "マスカーニャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png",
+      types: "grass,dark",
+    },
+    {
+      entry_number: 909,
+      name_ja: "ホゲータ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/909.png",
+      types: "fire",
+    },
+    {
+      entry_number: 910,
+      name_ja: "アチゲータ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/910.png",
+      types: "fire",
+    },
+    {
+      entry_number: 911,
+      name_ja: "ラウドボーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/911.png",
+      types: "fire,ghost",
+    },
+    {
+      entry_number: 912,
+      name_ja: "クワッス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/912.png",
+      types: "water",
+    },
+    {
+      entry_number: 913,
+      name_ja: "ウェルカモ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/913.png",
+      types: "water",
+    },
+    {
+      entry_number: 914,
+      name_ja: "ウェーニバル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/914.png",
+      types: "water,fighting",
+    },
+    {
+      entry_number: 915,
+      name_ja: "グルトン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/915.png",
+      types: "normal",
+    },
+    {
+      entry_number: 916,
+      name_ja: "パフュートン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/916.png",
+      types: "normal",
+    },
+    {
+      entry_number: 917,
+      name_ja: "タマンチュラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/917.png",
+      types: "bug",
+    },
+    {
+      entry_number: 918,
+      name_ja: "ワナイダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/918.png",
+      types: "bug",
+    },
+    {
+      entry_number: 919,
+      name_ja: "マメバッタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/919.png",
+      types: "bug",
+    },
+    {
+      entry_number: 920,
+      name_ja: "エクスレッグ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/920.png",
+      types: "bug,dark",
+    },
+    {
+      entry_number: 921,
+      name_ja: "パモ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/921.png",
+      types: "electric",
+    },
+    {
+      entry_number: 922,
+      name_ja: "パモット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/922.png",
+      types: "electric,fighting",
+    },
+    {
+      entry_number: 923,
+      name_ja: "パーモット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/923.png",
+      types: "electric,fighting",
+    },
+    {
+      entry_number: 924,
+      name_ja: "ワッカネズミ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/924.png",
+      types: "normal",
+    },
+    {
+      entry_number: 925,
+      name_ja: "イッカネズミ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/925.png",
+      types: "normal",
+    },
+    {
+      entry_number: 926,
+      name_ja: "パピモッチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/926.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 927,
+      name_ja: "バウッツェル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/927.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 928,
+      name_ja: "ミニーブ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/928.png",
+      types: "grass,normal",
+    },
+    {
+      entry_number: 929,
+      name_ja: "オリーニョ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/929.png",
+      types: "grass,normal",
+    },
+    {
+      entry_number: 930,
+      name_ja: "オリーヴァ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/930.png",
+      types: "grass,normal",
+    },
+    {
+      entry_number: 931,
+      name_ja: "イキリンコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/931.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 932,
+      name_ja: "コジオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/932.png",
+      types: "rock",
+    },
+    {
+      entry_number: 933,
+      name_ja: "ジオヅム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/933.png",
+      types: "rock",
+    },
+    {
+      entry_number: 934,
+      name_ja: "キョジオーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/934.png",
+      types: "rock",
+    },
+    {
+      entry_number: 935,
+      name_ja: "カルボウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/935.png",
+      types: "fire",
+    },
+    {
+      entry_number: 936,
+      name_ja: "グレンアルマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/936.png",
+      types: "fire,psychic",
+    },
+    {
+      entry_number: 937,
+      name_ja: "ソウブレイズ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/937.png",
+      types: "fire,ghost",
+    },
+    {
+      entry_number: 938,
+      name_ja: "ズピカ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/938.png",
+      types: "electric",
+    },
+    {
+      entry_number: 939,
+      name_ja: "ハラバリー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/939.png",
+      types: "electric",
+    },
+    {
+      entry_number: 940,
+      name_ja: "カイデン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/940.png",
+      types: "electric,flying",
+    },
+    {
+      entry_number: 941,
+      name_ja: "タイカイデン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/941.png",
+      types: "electric,flying",
+    },
+    {
+      entry_number: 942,
+      name_ja: "オラチフ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/942.png",
+      types: "dark",
+    },
+    {
+      entry_number: 943,
+      name_ja: "マフィティフ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/943.png",
+      types: "dark",
+    },
+    {
+      entry_number: 944,
+      name_ja: "シルシュルー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/944.png",
+      types: "poison,normal",
+    },
+    {
+      entry_number: 945,
+      name_ja: "タギングル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/945.png",
+      types: "poison,normal",
+    },
+    {
+      entry_number: 946,
+      name_ja: "アノクサ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/946.png",
+      types: "grass,ghost",
+    },
+    {
+      entry_number: 947,
+      name_ja: "アノホラグサ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/947.png",
+      types: "grass,ghost",
+    },
+    {
+      entry_number: 948,
+      name_ja: "ノノクラゲ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/948.png",
+      types: "ground,grass",
+    },
+    {
+      entry_number: 949,
+      name_ja: "リククラゲ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/949.png",
+      types: "ground,grass",
+    },
+    {
+      entry_number: 950,
+      name_ja: "ガケガニ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/950.png",
+      types: "rock",
+    },
+    {
+      entry_number: 951,
+      name_ja: "カプサイジ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/951.png",
+      types: "grass",
+    },
+    {
+      entry_number: 952,
+      name_ja: "スコヴィラン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/952.png",
+      types: "grass,fire",
+    },
+    {
+      entry_number: 953,
+      name_ja: "シガロコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/953.png",
+      types: "bug",
+    },
+    {
+      entry_number: 954,
+      name_ja: "ベラカス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/954.png",
+      types: "bug,psychic",
+    },
+    {
+      entry_number: 955,
+      name_ja: "ヒラヒナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/955.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 956,
+      name_ja: "クエスパトラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/956.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 957,
+      name_ja: "カヌチャン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/957.png",
+      types: "fairy,steel",
+    },
+    {
+      entry_number: 958,
+      name_ja: "ナカヌチャン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/958.png",
+      types: "fairy,steel",
+    },
+    {
+      entry_number: 959,
+      name_ja: "デカヌチャン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png",
+      types: "fairy,steel",
+    },
+    {
+      entry_number: 960,
+      name_ja: "ウミディグダ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/960.png",
+      types: "water",
+    },
+    {
+      entry_number: 961,
+      name_ja: "ウミトリオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/961.png",
+      types: "water",
+    },
+    {
+      entry_number: 962,
+      name_ja: "オトシドリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/962.png",
+      types: "flying,dark",
+    },
+    {
+      entry_number: 963,
+      name_ja: "ナミイルカ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/963.png",
+      types: "water",
+    },
+    {
+      entry_number: 964,
+      name_ja: "イルカマン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/964.png",
+      types: "water",
+    },
+    {
+      entry_number: 965,
+      name_ja: "ブロロン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/965.png",
+      types: "steel,poison",
+    },
+    {
+      entry_number: 966,
+      name_ja: "ブロロローム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/966.png",
+      types: "steel,poison",
+    },
+    {
+      entry_number: 967,
+      name_ja: "モトトカゲ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/967.png",
+      types: "dragon,normal",
+    },
+    {
+      entry_number: 968,
+      name_ja: "ミミズズ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/968.png",
+      types: "steel",
+    },
+    {
+      entry_number: 969,
+      name_ja: "キラーメ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/969.png",
+      types: "rock,poison",
+    },
+    {
+      entry_number: 970,
+      name_ja: "キラフロル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/970.png",
+      types: "rock,poison",
+    },
+    {
+      entry_number: 971,
+      name_ja: "ボチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/971.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 972,
+      name_ja: "ハカドッグ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/972.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 973,
+      name_ja: "カラミンゴ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/973.png",
+      types: "flying,fighting",
+    },
+    {
+      entry_number: 974,
+      name_ja: "アルクジラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/974.png",
+      types: "ice",
+    },
+    {
+      entry_number: 975,
+      name_ja: "ハルクジラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/975.png",
+      types: "ice",
+    },
+    {
+      entry_number: 976,
+      name_ja: "ミガルーサ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/976.png",
+      types: "water,psychic",
+    },
+    {
+      entry_number: 977,
+      name_ja: "ヘイラッシャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/977.png",
+      types: "water",
+    },
+    {
+      entry_number: 978,
+      name_ja: "シャリタツ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/978.png",
+      types: "dragon,water",
+    },
+    {
+      entry_number: 979,
+      name_ja: "コノヨザル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/979.png",
+      types: "fighting,ghost",
+    },
+    {
+      entry_number: 980,
+      name_ja: "ドオー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/980.png",
+      types: "poison,ground",
+    },
+    {
+      entry_number: 981,
+      name_ja: "リキキリン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/981.png",
+      types: "normal,psychic",
+    },
+    {
+      entry_number: 982,
+      name_ja: "ノココッチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/982.png",
+      types: "normal",
+    },
+    {
+      entry_number: 983,
+      name_ja: "ドドゲザン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/983.png",
+      types: "dark,steel",
+    },
+    {
+      entry_number: 984,
+      name_ja: "イダイナキバ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/984.png",
+      types: "ground,fighting",
+    },
+    {
+      entry_number: 985,
+      name_ja: "サケブシッポ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/985.png",
+      types: "fairy,psychic",
+    },
+    {
+      entry_number: 986,
+      name_ja: "アラブルタケ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/986.png",
+      types: "grass,dark",
+    },
+    {
+      entry_number: 987,
+      name_ja: "ハバタクカミ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/987.png",
+      types: "ghost,fairy",
+    },
+    {
+      entry_number: 988,
+      name_ja: "チヲハウハネ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/988.png",
+      types: "bug,fighting",
+    },
+    {
+      entry_number: 989,
+      name_ja: "スナノケガワ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/989.png",
+      types: "electric,ground",
+    },
+    {
+      entry_number: 990,
+      name_ja: "テツノワダチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/990.png",
+      types: "ground,steel",
+    },
+    {
+      entry_number: 991,
+      name_ja: "テツノツツミ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/991.png",
+      types: "ice,water",
+    },
+    {
+      entry_number: 992,
+      name_ja: "テツノカイナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/992.png",
+      types: "fighting,electric",
+    },
+    {
+      entry_number: 993,
+      name_ja: "テツノコウベ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/993.png",
+      types: "dark,flying",
+    },
+    {
+      entry_number: 994,
+      name_ja: "テツノドクガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/994.png",
+      types: "fire,poison",
+    },
+    {
+      entry_number: 995,
+      name_ja: "テツノイバラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/995.png",
+      types: "rock,electric",
+    },
+    {
+      entry_number: 996,
+      name_ja: "セビエ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/996.png",
+      types: "dragon,ice",
+    },
+    {
+      entry_number: 997,
+      name_ja: "セゴール",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/997.png",
+      types: "dragon,ice",
+    },
+    {
+      entry_number: 998,
+      name_ja: "セグレイブ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/998.png",
+      types: "dragon,ice",
+    },
+    {
+      entry_number: 999,
+      name_ja: "コレクレー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/999.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 1000,
+      name_ja: "サーフゴー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png",
+      types: "steel,ghost",
+    },
+    {
+      entry_number: 1001,
+      name_ja: "チオンジェン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1001.png",
+      types: "dark,grass",
+    },
+    {
+      entry_number: 1002,
+      name_ja: "パオジアン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1002.png",
+      types: "dark,ice",
+    },
+    {
+      entry_number: 1003,
+      name_ja: "ディンルー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1003.png",
+      types: "dark,ground",
+    },
+    {
+      entry_number: 1004,
+      name_ja: "イーユイ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1004.png",
+      types: "dark,fire",
+    },
+    {
+      entry_number: 1005,
+      name_ja: "トドロクツキ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1005.png",
+      types: "dragon,dark",
+    },
+    {
+      entry_number: 1006,
+      name_ja: "テツノブジン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1006.png",
+      types: "fairy,fighting",
+    },
+    {
+      entry_number: 1007,
+      name_ja: "コライドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1007.png",
+      types: "fighting,dragon",
+    },
+    {
+      entry_number: 1008,
+      name_ja: "ミライドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1008.png",
+      types: "electric,dragon",
+    },
+    {
+      entry_number: 1009,
+      name_ja: "取得できませんでした",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/152.svg",
+      types: "water,dragon",
+    },
+    {
+      entry_number: 1010,
+      name_ja: "取得できませんでした",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/152.svg",
+      types: "grass,psychic",
+    },
+    {
+      entry_number: 10001,
+      name_ja: "デオキシス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10001.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 10002,
+      name_ja: "デオキシス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10002.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 10003,
+      name_ja: "デオキシス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10003.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 10004,
+      name_ja: "ミノマダム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10004.png",
+      types: "bug,ground",
+    },
+    {
+      entry_number: 10005,
+      name_ja: "ミノマダム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10005.png",
+      types: "bug,steel",
+    },
+    {
+      entry_number: 10006,
+      name_ja: "シェイミ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10006.png",
+      types: "grass,flying",
+    },
+    {
+      entry_number: 10007,
+      name_ja: "ギラティナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10007.png",
+      types: "ghost,dragon",
+    },
+    {
+      entry_number: 10008,
+      name_ja: "ロトム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10008.png",
+      types: "electric,fire",
+    },
+    {
+      entry_number: 10009,
+      name_ja: "ロトム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10009.png",
+      types: "electric,water",
+    },
+    {
+      entry_number: 10010,
+      name_ja: "ロトム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10010.png",
+      types: "electric,ice",
+    },
+    {
+      entry_number: 10011,
+      name_ja: "ロトム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10011.png",
+      types: "electric,flying",
+    },
+    {
+      entry_number: 10012,
+      name_ja: "ロトム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10012.png",
+      types: "electric,grass",
+    },
+    {
+      entry_number: 10013,
+      name_ja: "ポワルン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10013.png",
+      types: "fire",
+    },
+    {
+      entry_number: 10014,
+      name_ja: "ポワルン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10014.png",
+      types: "water",
+    },
+    {
+      entry_number: 10015,
+      name_ja: "ポワルン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10015.png",
+      types: "ice",
+    },
+    {
+      entry_number: 10016,
+      name_ja: "バスラオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10016.png",
+      types: "water",
+    },
+    {
+      entry_number: 10017,
+      name_ja: "ヒヒダルマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10017.png",
+      types: "fire,psychic",
+    },
+    {
+      entry_number: 10018,
+      name_ja: "メロエッタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10018.png",
+      types: "normal,fighting",
+    },
+    {
+      entry_number: 10019,
+      name_ja: "トルネロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10019.png",
+      types: "flying",
+    },
+    {
+      entry_number: 10020,
+      name_ja: "ボルトロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10020.png",
+      types: "electric,flying",
+    },
+    {
+      entry_number: 10021,
+      name_ja: "ランドロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10021.png",
+      types: "ground,flying",
+    },
+    {
+      entry_number: 10022,
+      name_ja: "キュレム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10022.png",
+      types: "dragon,ice",
+    },
+    {
+      entry_number: 10023,
+      name_ja: "キュレム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10023.png",
+      types: "dragon,ice",
+    },
+    {
+      entry_number: 10024,
+      name_ja: "ケルディオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10024.png",
+      types: "water,fighting",
+    },
+    {
+      entry_number: 10025,
+      name_ja: "ニャオニクス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10025.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 10026,
+      name_ja: "ギルガルド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10026.png",
+      types: "steel,ghost",
+    },
+    {
+      entry_number: 10027,
+      name_ja: "バケッチャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10027.png",
+      types: "ghost,grass",
+    },
+    {
+      entry_number: 10028,
+      name_ja: "バケッチャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10028.png",
+      types: "ghost,grass",
+    },
+    {
+      entry_number: 10029,
+      name_ja: "バケッチャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10029.png",
+      types: "ghost,grass",
+    },
+    {
+      entry_number: 10030,
+      name_ja: "パンプジン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10030.png",
+      types: "ghost,grass",
+    },
+    {
+      entry_number: 10031,
+      name_ja: "パンプジン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10031.png",
+      types: "ghost,grass",
+    },
+    {
+      entry_number: 10032,
+      name_ja: "パンプジン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10032.png",
+      types: "ghost,grass",
+    },
+    {
+      entry_number: 10033,
+      name_ja: "フシギバナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10033.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 10034,
+      name_ja: "リザードン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10034.png",
+      types: "fire,dragon",
+    },
+    {
+      entry_number: 10035,
+      name_ja: "リザードン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10035.png",
+      types: "fire,flying",
+    },
+    {
+      entry_number: 10036,
+      name_ja: "カメックス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10036.png",
+      types: "water",
+    },
+    {
+      entry_number: 10037,
+      name_ja: "フーディン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10037.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 10038,
+      name_ja: "ゲンガー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10038.png",
+      types: "ghost,poison",
+    },
+    {
+      entry_number: 10039,
+      name_ja: "ガルーラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10039.png",
+      types: "normal",
+    },
+    {
+      entry_number: 10040,
+      name_ja: "カイロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10040.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 10041,
+      name_ja: "ギャラドス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10041.png",
+      types: "water,dark",
+    },
+    {
+      entry_number: 10042,
+      name_ja: "プテラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10042.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10043,
+      name_ja: "ミュウツー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10043.png",
+      types: "psychic,fighting",
+    },
+    {
+      entry_number: 10044,
+      name_ja: "ミュウツー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10044.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 10045,
+      name_ja: "デンリュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10045.png",
+      types: "electric,dragon",
+    },
+    {
+      entry_number: 10046,
+      name_ja: "ハッサム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10046.png",
+      types: "bug,steel",
+    },
+    {
+      entry_number: 10047,
+      name_ja: "ヘラクロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10047.png",
+      types: "bug,fighting",
+    },
+    {
+      entry_number: 10048,
+      name_ja: "ヘルガー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10048.png",
+      types: "dark,fire",
+    },
+    {
+      entry_number: 10049,
+      name_ja: "バンギラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10049.png",
+      types: "rock,dark",
+    },
+    {
+      entry_number: 10050,
+      name_ja: "バシャーモ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10050.png",
+      types: "fire,fighting",
+    },
+    {
+      entry_number: 10051,
+      name_ja: "サーナイト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10051.png",
+      types: "psychic,fairy",
+    },
+    {
+      entry_number: 10052,
+      name_ja: "クチート",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10052.png",
+      types: "steel,fairy",
+    },
+    {
+      entry_number: 10053,
+      name_ja: "ボスゴドラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10053.png",
+      types: "steel",
+    },
+    {
+      entry_number: 10054,
+      name_ja: "チャーレム",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10054.png",
+      types: "fighting,psychic",
+    },
+    {
+      entry_number: 10055,
+      name_ja: "ライボルト",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10055.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10056,
+      name_ja: "ジュペッタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10056.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 10057,
+      name_ja: "アブソル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10057.png",
+      types: "dark",
+    },
+    {
+      entry_number: 10058,
+      name_ja: "ガブリアス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10058.png",
+      types: "dragon,ground",
+    },
+    {
+      entry_number: 10059,
+      name_ja: "ルカリオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10059.png",
+      types: "fighting,steel",
+    },
+    {
+      entry_number: 10060,
+      name_ja: "ユキノオー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10060.png",
+      types: "grass,ice",
+    },
+    {
+      entry_number: 10061,
+      name_ja: "フラエッテ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10061.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 10062,
+      name_ja: "ラティアス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10062.png",
+      types: "dragon,psychic",
+    },
+    {
+      entry_number: 10063,
+      name_ja: "ラティオス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10063.png",
+      types: "dragon,psychic",
+    },
+    {
+      entry_number: 10064,
+      name_ja: "ラグラージ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10064.png",
+      types: "water,ground",
+    },
+    {
+      entry_number: 10065,
+      name_ja: "ジュカイン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10065.png",
+      types: "grass,dragon",
+    },
+    {
+      entry_number: 10066,
+      name_ja: "ヤミラミ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10066.png",
+      types: "dark,ghost",
+    },
+    {
+      entry_number: 10067,
+      name_ja: "チルタリス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10067.png",
+      types: "dragon,fairy",
+    },
+    {
+      entry_number: 10068,
+      name_ja: "エルレイド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10068.png",
+      types: "psychic,fighting",
+    },
+    {
+      entry_number: 10069,
+      name_ja: "タブンネ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10069.png",
+      types: "normal,fairy",
+    },
+    {
+      entry_number: 10070,
+      name_ja: "サメハダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10070.png",
+      types: "water,dark",
+    },
+    {
+      entry_number: 10071,
+      name_ja: "ヤドラン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10071.png",
+      types: "water,psychic",
+    },
+    {
+      entry_number: 10072,
+      name_ja: "ハガネール",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10072.png",
+      types: "steel,ground",
+    },
+    {
+      entry_number: 10073,
+      name_ja: "ピジョット",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10073.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 10074,
+      name_ja: "オニゴーリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10074.png",
+      types: "ice",
+    },
+    {
+      entry_number: 10075,
+      name_ja: "ディアンシー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10075.png",
+      types: "rock,fairy",
+    },
+    {
+      entry_number: 10076,
+      name_ja: "メタグロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10076.png",
+      types: "steel,psychic",
+    },
+    {
+      entry_number: 10077,
+      name_ja: "カイオーガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10077.png",
+      types: "water",
+    },
+    {
+      entry_number: 10078,
+      name_ja: "グラードン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10078.png",
+      types: "ground,fire",
+    },
+    {
+      entry_number: 10079,
+      name_ja: "レックウザ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10079.png",
+      types: "dragon,flying",
+    },
+    {
+      entry_number: 10080,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10080.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10081,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10081.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10082,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10082.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10083,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10083.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10084,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10084.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10085,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10085.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10086,
+      name_ja: "フーパ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10086.png",
+      types: "psychic,dark",
+    },
+    {
+      entry_number: 10087,
+      name_ja: "バクーダ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10087.png",
+      types: "fire,ground",
+    },
+    {
+      entry_number: 10088,
+      name_ja: "ミミロップ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10088.png",
+      types: "normal,fighting",
+    },
+    {
+      entry_number: 10089,
+      name_ja: "ボーマンダ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10089.png",
+      types: "dragon,flying",
+    },
+    {
+      entry_number: 10090,
+      name_ja: "スピアー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10090.png",
+      types: "bug,poison",
+    },
+    {
+      entry_number: 10091,
+      name_ja: "コラッタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10091.png",
+      types: "dark,normal",
+    },
+    {
+      entry_number: 10092,
+      name_ja: "ラッタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10092.png",
+      types: "dark,normal",
+    },
+    {
+      entry_number: 10093,
+      name_ja: "ラッタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10093.png",
+      types: "dark,normal",
+    },
+    {
+      entry_number: 10094,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10094.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10095,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10095.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10096,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10096.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10097,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10097.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10098,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10098.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10099,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10099.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10100,
+      name_ja: "ライチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10100.png",
+      types: "electric,psychic",
+    },
+    {
+      entry_number: 10101,
+      name_ja: "サンド",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10101.png",
+      types: "ice,steel",
+    },
+    {
+      entry_number: 10102,
+      name_ja: "サンドパン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10102.png",
+      types: "ice,steel",
+    },
+    {
+      entry_number: 10103,
+      name_ja: "ロコン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10103.png",
+      types: "ice",
+    },
+    {
+      entry_number: 10104,
+      name_ja: "キュウコン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10104.png",
+      types: "ice,fairy",
+    },
+    {
+      entry_number: 10105,
+      name_ja: "ディグダ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10105.png",
+      types: "ground,steel",
+    },
+    {
+      entry_number: 10106,
+      name_ja: "ダグトリオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10106.png",
+      types: "ground,steel",
+    },
+    {
+      entry_number: 10107,
+      name_ja: "ニャース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10107.png",
+      types: "dark",
+    },
+    {
+      entry_number: 10108,
+      name_ja: "ペルシアン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10108.png",
+      types: "dark",
+    },
+    {
+      entry_number: 10109,
+      name_ja: "イシツブテ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10109.png",
+      types: "rock,electric",
+    },
+    {
+      entry_number: 10110,
+      name_ja: "ゴローン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10110.png",
+      types: "rock,electric",
+    },
+    {
+      entry_number: 10111,
+      name_ja: "ゴローニャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10111.png",
+      types: "rock,electric",
+    },
+    {
+      entry_number: 10112,
+      name_ja: "ベトベター",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10112.png",
+      types: "poison,dark",
+    },
+    {
+      entry_number: 10113,
+      name_ja: "ベトベトン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10113.png",
+      types: "poison,dark",
+    },
+    {
+      entry_number: 10114,
+      name_ja: "ナッシー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10114.png",
+      types: "grass,dragon",
+    },
+    {
+      entry_number: 10115,
+      name_ja: "ガラガラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10115.png",
+      types: "fire,ghost",
+    },
+    {
+      entry_number: 10116,
+      name_ja: "ゲッコウガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10116.png",
+      types: "water,dark",
+    },
+    {
+      entry_number: 10117,
+      name_ja: "ゲッコウガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10117.png",
+      types: "water,dark",
+    },
+    {
+      entry_number: 10118,
+      name_ja: "ジガルデ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10118.png",
+      types: "dragon,ground",
+    },
+    {
+      entry_number: 10119,
+      name_ja: "ジガルデ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10119.png",
+      types: "dragon,ground",
+    },
+    {
+      entry_number: 10120,
+      name_ja: "ジガルデ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10120.png",
+      types: "dragon,ground",
+    },
+    {
+      entry_number: 10121,
+      name_ja: "デカグース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10121.png",
+      types: "normal",
+    },
+    {
+      entry_number: 10122,
+      name_ja: "クワガノン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10122.png",
+      types: "bug,electric",
+    },
+    {
+      entry_number: 10123,
+      name_ja: "オドリドリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10123.png",
+      types: "electric,flying",
+    },
+    {
+      entry_number: 10124,
+      name_ja: "オドリドリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10124.png",
+      types: "psychic,flying",
+    },
+    {
+      entry_number: 10125,
+      name_ja: "オドリドリ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10125.png",
+      types: "ghost,flying",
+    },
+    {
+      entry_number: 10126,
+      name_ja: "ルガルガン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10126.png",
+      types: "rock",
+    },
+    {
+      entry_number: 10127,
+      name_ja: "ヨワシ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10127.png",
+      types: "water",
+    },
+    {
+      entry_number: 10128,
+      name_ja: "ラランテス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10128.png",
+      types: "grass",
+    },
+    {
+      entry_number: 10129,
+      name_ja: "エンニュート",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10129.png",
+      types: "poison,fire",
+    },
+    {
+      entry_number: 10130,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10130.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10131,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10131.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10132,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10132.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10133,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10133.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10134,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10134.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10135,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10135.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10136,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10136.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10137,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10137.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10138,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10138.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10139,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10139.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10140,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10140.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10141,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10141.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10142,
+      name_ja: "メテノ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10142.png",
+      types: "rock,flying",
+    },
+    {
+      entry_number: 10143,
+      name_ja: "ミミッキュ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/152.svg",
+      types: "ghost,fairy",
+    },
+    {
+      entry_number: 10144,
+      name_ja: "ミミッキュ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10144.png",
+      types: "ghost,fairy",
+    },
+    {
+      entry_number: 10145,
+      name_ja: "ミミッキュ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/152.svg",
+      types: "ghost,fairy",
+    },
+    {
+      entry_number: 10146,
+      name_ja: "ジャラランガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10146.png",
+      types: "dragon,fighting",
+    },
+    {
+      entry_number: 10147,
+      name_ja: "マギアナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10147.png",
+      types: "steel,fairy",
+    },
+    {
+      entry_number: 10148,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10148.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10149,
+      name_ja: "ガラガラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10149.png",
+      types: "fire,ghost",
+    },
+    {
+      entry_number: 10150,
+      name_ja: "アブリボン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10150.png",
+      types: "bug,fairy",
+    },
+    {
+      entry_number: 10151,
+      name_ja: "イワンコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10151.png",
+      types: "rock",
+    },
+    {
+      entry_number: 10152,
+      name_ja: "ルガルガン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10152.png",
+      types: "rock",
+    },
+    {
+      entry_number: 10153,
+      name_ja: "オニシズクモ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10153.png",
+      types: "water,bug",
+    },
+    {
+      entry_number: 10154,
+      name_ja: "トゲデマル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10154.png",
+      types: "electric,steel",
+    },
+    {
+      entry_number: 10155,
+      name_ja: "ネクロズマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10155.png",
+      types: "psychic,steel",
+    },
+    {
+      entry_number: 10156,
+      name_ja: "ネクロズマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10156.png",
+      types: "psychic,ghost",
+    },
+    {
+      entry_number: 10157,
+      name_ja: "ネクロズマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10157.png",
+      types: "psychic,dragon",
+    },
+    {
+      entry_number: 10158,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10158.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10159,
+      name_ja: "イーブイ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10159.png",
+      types: "normal",
+    },
+    {
+      entry_number: 10160,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10160.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10161,
+      name_ja: "ニャース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10161.png",
+      types: "steel",
+    },
+    {
+      entry_number: 10162,
+      name_ja: "ポニータ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10162.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 10163,
+      name_ja: "ギャロップ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10163.png",
+      types: "psychic,fairy",
+    },
+    {
+      entry_number: 10164,
+      name_ja: "ヤドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10164.png",
+      types: "psychic",
+    },
+    {
+      entry_number: 10165,
+      name_ja: "ヤドラン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10165.png",
+      types: "poison,psychic",
+    },
+    {
+      entry_number: 10166,
+      name_ja: "カモネギ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10166.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 10167,
+      name_ja: "マタドガス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10167.png",
+      types: "poison,fairy",
+    },
+    {
+      entry_number: 10168,
+      name_ja: "バリヤード",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10168.png",
+      types: "ice,psychic",
+    },
+    {
+      entry_number: 10169,
+      name_ja: "フリーザー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10169.png",
+      types: "psychic,flying",
+    },
+    {
+      entry_number: 10170,
+      name_ja: "サンダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10170.png",
+      types: "fighting,flying",
+    },
+    {
+      entry_number: 10171,
+      name_ja: "ファイヤー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10171.png",
+      types: "dark,flying",
+    },
+    {
+      entry_number: 10172,
+      name_ja: "ヤドキング",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10172.png",
+      types: "poison,psychic",
+    },
+    {
+      entry_number: 10173,
+      name_ja: "サニーゴ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10173.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 10174,
+      name_ja: "ジグザグマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10174.png",
+      types: "dark,normal",
+    },
+    {
+      entry_number: 10175,
+      name_ja: "マッスグマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10175.png",
+      types: "dark,normal",
+    },
+    {
+      entry_number: 10176,
+      name_ja: "ダルマッカ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10176.png",
+      types: "ice",
+    },
+    {
+      entry_number: 10177,
+      name_ja: "ヒヒダルマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10177.png",
+      types: "ice",
+    },
+    {
+      entry_number: 10178,
+      name_ja: "ヒヒダルマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10178.png",
+      types: "ice,fire",
+    },
+    {
+      entry_number: 10179,
+      name_ja: "デスマス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10179.png",
+      types: "ground,ghost",
+    },
+    {
+      entry_number: 10180,
+      name_ja: "マッギョ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10180.png",
+      types: "ground,steel",
+    },
+    {
+      entry_number: 10181,
+      name_ja: "ジガルデ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10181.png",
+      types: "dragon,ground",
+    },
+    {
+      entry_number: 10182,
+      name_ja: "ウッウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10182.png",
+      types: "flying,water",
+    },
+    {
+      entry_number: 10183,
+      name_ja: "ウッウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10183.png",
+      types: "flying,water",
+    },
+    {
+      entry_number: 10184,
+      name_ja: "ストリンダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10184.png",
+      types: "electric,poison",
+    },
+    {
+      entry_number: 10185,
+      name_ja: "コオリッポ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10185.png",
+      types: "ice",
+    },
+    {
+      entry_number: 10186,
+      name_ja: "イエッサン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10186.png",
+      types: "psychic,normal",
+    },
+    {
+      entry_number: 10187,
+      name_ja: "モルペコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10187.png",
+      types: "electric,dark",
+    },
+    {
+      entry_number: 10188,
+      name_ja: "ザシアン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10188.png",
+      types: "fairy,steel",
+    },
+    {
+      entry_number: 10189,
+      name_ja: "ザマゼンタ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10189.png",
+      types: "fighting,steel",
+    },
+    {
+      entry_number: 10190,
+      name_ja: "ムゲンダイナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10190.png",
+      types: "poison,dragon",
+    },
+    {
+      entry_number: 10191,
+      name_ja: "ウーラオス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10191.png",
+      types: "fighting,water",
+    },
+    {
+      entry_number: 10192,
+      name_ja: "ザルード",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10192.png",
+      types: "dark,grass",
+    },
+    {
+      entry_number: 10193,
+      name_ja: "バドレックス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10193.png",
+      types: "psychic,ice",
+    },
+    {
+      entry_number: 10194,
+      name_ja: "バドレックス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10194.png",
+      types: "psychic,ghost",
+    },
+    {
+      entry_number: 10195,
+      name_ja: "フシギバナ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10195.png",
+      types: "grass,poison",
+    },
+    {
+      entry_number: 10196,
+      name_ja: "リザードン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10196.png",
+      types: "fire,flying",
+    },
+    {
+      entry_number: 10197,
+      name_ja: "カメックス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10197.png",
+      types: "water",
+    },
+    {
+      entry_number: 10198,
+      name_ja: "バタフリー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10198.png",
+      types: "bug,flying",
+    },
+    {
+      entry_number: 10199,
+      name_ja: "ピカチュウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10199.png",
+      types: "electric",
+    },
+    {
+      entry_number: 10200,
+      name_ja: "ニャース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10200.png",
+      types: "normal",
+    },
+    {
+      entry_number: 10201,
+      name_ja: "カイリキー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10201.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 10202,
+      name_ja: "ゲンガー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10202.png",
+      types: "ghost,poison",
+    },
+    {
+      entry_number: 10203,
+      name_ja: "キングラー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10203.png",
+      types: "water",
+    },
+    {
+      entry_number: 10204,
+      name_ja: "ラプラス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10204.png",
+      types: "water,ice",
+    },
+    {
+      entry_number: 10205,
+      name_ja: "イーブイ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10205.png",
+      types: "normal",
+    },
+    {
+      entry_number: 10206,
+      name_ja: "カビゴン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10206.png",
+      types: "normal",
+    },
+    {
+      entry_number: 10207,
+      name_ja: "ダストダス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10207.png",
+      types: "poison",
+    },
+    {
+      entry_number: 10208,
+      name_ja: "メルメタル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10208.png",
+      types: "steel",
+    },
+    {
+      entry_number: 10209,
+      name_ja: "ゴリランダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10209.png",
+      types: "grass",
+    },
+    {
+      entry_number: 10210,
+      name_ja: "エースバーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10210.png",
+      types: "fire",
+    },
+    {
+      entry_number: 10211,
+      name_ja: "インテレオン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10211.png",
+      types: "water",
+    },
+    {
+      entry_number: 10212,
+      name_ja: "アーマーガア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10212.png",
+      types: "flying,steel",
+    },
+    {
+      entry_number: 10213,
+      name_ja: "イオルブ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10213.png",
+      types: "bug,psychic",
+    },
+    {
+      entry_number: 10214,
+      name_ja: "カジリガメ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10214.png",
+      types: "water,rock",
+    },
+    {
+      entry_number: 10215,
+      name_ja: "セキタンザン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10215.png",
+      types: "rock,fire",
+    },
+    {
+      entry_number: 10216,
+      name_ja: "アップリュー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10216.png",
+      types: "grass,dragon",
+    },
+    {
+      entry_number: 10217,
+      name_ja: "タルップル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10217.png",
+      types: "grass,dragon",
+    },
+    {
+      entry_number: 10218,
+      name_ja: "サダイジャ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10218.png",
+      types: "ground",
+    },
+    {
+      entry_number: 10219,
+      name_ja: "ストリンダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10219.png",
+      types: "electric,poison",
+    },
+    {
+      entry_number: 10220,
+      name_ja: "マルヤクデ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10220.png",
+      types: "fire,bug",
+    },
+    {
+      entry_number: 10221,
+      name_ja: "ブリムオン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10221.png",
+      types: "psychic,fairy",
+    },
+    {
+      entry_number: 10222,
+      name_ja: "オーロンゲ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10222.png",
+      types: "dark,fairy",
+    },
+    {
+      entry_number: 10223,
+      name_ja: "マホイップ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10223.png",
+      types: "fairy",
+    },
+    {
+      entry_number: 10224,
+      name_ja: "ダイオウドウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10224.png",
+      types: "steel",
+    },
+    {
+      entry_number: 10225,
+      name_ja: "ジュラルドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10225.png",
+      types: "steel,dragon",
+    },
+    {
+      entry_number: 10226,
+      name_ja: "ウーラオス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10226.png",
+      types: "fighting,dark",
+    },
+    {
+      entry_number: 10227,
+      name_ja: "ウーラオス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10227.png",
+      types: "fighting,water",
+    },
+    {
+      entry_number: 10228,
+      name_ja: "ストリンダー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10228.png",
+      types: "electric,poison",
+    },
+    {
+      entry_number: 10229,
+      name_ja: "ガーディ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10229.png",
+      types: "fire,rock",
+    },
+    {
+      entry_number: 10230,
+      name_ja: "ウインディ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10230.png",
+      types: "fire,rock",
+    },
+    {
+      entry_number: 10231,
+      name_ja: "ビリリダマ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10231.png",
+      types: "electric,grass",
+    },
+    {
+      entry_number: 10232,
+      name_ja: "マルマイン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10232.png",
+      types: "electric,grass",
+    },
+    {
+      entry_number: 10233,
+      name_ja: "バクフーン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10233.png",
+      types: "fire,ghost",
+    },
+    {
+      entry_number: 10234,
+      name_ja: "ハリーセン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10234.png",
+      types: "dark,poison",
+    },
+    {
+      entry_number: 10235,
+      name_ja: "ニューラ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10235.png",
+      types: "fighting,poison",
+    },
+    {
+      entry_number: 10236,
+      name_ja: "ダイケンキ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10236.png",
+      types: "water,dark",
+    },
+    {
+      entry_number: 10237,
+      name_ja: "ドレディア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10237.png",
+      types: "grass,fighting",
+    },
+    {
+      entry_number: 10238,
+      name_ja: "ゾロア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10238.png",
+      types: "normal,ghost",
+    },
+    {
+      entry_number: 10239,
+      name_ja: "ゾロアーク",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10239.png",
+      types: "normal,ghost",
+    },
+    {
+      entry_number: 10240,
+      name_ja: "ウォーグル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10240.png",
+      types: "psychic,flying",
+    },
+    {
+      entry_number: 10241,
+      name_ja: "ヌメイル",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10241.png",
+      types: "steel,dragon",
+    },
+    {
+      entry_number: 10242,
+      name_ja: "ヌメルゴン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10242.png",
+      types: "steel,dragon",
+    },
+    {
+      entry_number: 10243,
+      name_ja: "クレベース",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10243.png",
+      types: "ice,rock",
+    },
+    {
+      entry_number: 10244,
+      name_ja: "ジュナイパー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10244.png",
+      types: "grass,fighting",
+    },
+    {
+      entry_number: 10245,
+      name_ja: "ディアルガ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10245.png",
+      types: "steel,dragon",
+    },
+    {
+      entry_number: 10246,
+      name_ja: "パルキア",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10246.png",
+      types: "water,dragon",
+    },
+    {
+      entry_number: 10247,
+      name_ja: "バスラオ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10247.png",
+      types: "water",
+    },
+    {
+      entry_number: 10248,
+      name_ja: "イダイトウ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10248.png",
+      types: "water,ghost",
+    },
+    {
+      entry_number: 10249,
+      name_ja: "ラブトロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10249.png",
+      types: "fairy,flying",
+    },
+    {
+      entry_number: 10250,
+      name_ja: "ケンタロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10250.png",
+      types: "fighting",
+    },
+    {
+      entry_number: 10251,
+      name_ja: "ケンタロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10251.png",
+      types: "fighting,fire",
+    },
+    {
+      entry_number: 10252,
+      name_ja: "ケンタロス",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10252.png",
+      types: "fighting,water",
+    },
+    {
+      entry_number: 10253,
+      name_ja: "ウパー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10253.png",
+      types: "poison,ground",
+    },
+    {
+      entry_number: 10254,
+      name_ja: "パフュートン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10254.png",
+      types: "normal",
+    },
+    {
+      entry_number: 10255,
+      name_ja: "ノココッチ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10255.png",
+      types: "normal",
+    },
+    {
+      entry_number: 10256,
+      name_ja: "イルカマン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10256.png",
+      types: "water",
+    },
+    {
+      entry_number: 10257,
+      name_ja: "イッカネズミ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10257.png",
+      types: "normal",
+    },
+    {
+      entry_number: 10258,
+      name_ja: "シャリタツ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10258.png",
+      types: "dragon,water",
+    },
+    {
+      entry_number: 10259,
+      name_ja: "シャリタツ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10259.png",
+      types: "dragon,water",
+    },
+    {
+      entry_number: 10260,
+      name_ja: "イキリンコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10260.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 10261,
+      name_ja: "イキリンコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10261.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 10262,
+      name_ja: "イキリンコ",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10262.png",
+      types: "normal,flying",
+    },
+    {
+      entry_number: 10263,
+      name_ja: "コレクレー",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10263.png",
+      types: "ghost",
+    },
+    {
+      entry_number: 10264,
+      name_ja: "コライドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/152.svg",
+      types: "fighting,dragon",
+    },
+    {
+      entry_number: 10265,
+      name_ja: "コライドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/152.svg",
+      types: "fighting,dragon",
+    },
+    {
+      entry_number: 10266,
+      name_ja: "コライドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/152.svg",
+      types: "fighting,dragon",
+    },
+    {
+      entry_number: 10267,
+      name_ja: "コライドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/152.svg",
+      types: "fighting,dragon",
+    },
+    {
+      entry_number: 10268,
+      name_ja: "ミライドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/152.svg",
+      types: "electric,dragon",
+    },
+    {
+      entry_number: 10269,
+      name_ja: "ミライドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/152.svg",
+      types: "electric,dragon",
+    },
+    {
+      entry_number: 10270,
+      name_ja: "ミライドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/152.svg",
+      types: "electric,dragon",
+    },
+    {
+      entry_number: 10271,
+      name_ja: "ミライドン",
+      image_url:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/152.svg",
+      types: "electric,dragon",
+    },
+  ];
+};
+
 export const mockPokemonRepository: PokemonRepository = {
   getPokemons,
   searchPokemons,
+  getPokemonsTopView,
 };
