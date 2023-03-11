@@ -37,7 +37,7 @@ export const pokemonFactory = (rep?: PokemonRepository) => {
     },
     showOne: async (
       params: Pick<GetPokemon, "entry_number">
-    ): Promise<GetPokemon> => {
+    ): Promise<GetPokemon | undefined> => {
       return await repository.getPokemon({ ...params });
     },
     show: async (): Promise<GetPokemon[]> => {

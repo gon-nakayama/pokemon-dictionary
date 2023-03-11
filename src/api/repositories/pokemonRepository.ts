@@ -12,7 +12,9 @@ export type PokemonRepository = {
     params: Pick<GetPokemon, "name_ja">
   ) => Promise<GetPokemon[]>;
   getPokemonsTopView: () => Promise<TopView[]>;
-  getPokemon: (params: Pick<GetPokemon, "entry_number">) => Promise<GetPokemon>;
+  getPokemon: (
+    params: Pick<GetPokemon, "entry_number">
+  ) => Promise<GetPokemon | undefined>;
 };
 
 const getPokemonsTopView = async (): Promise<TopView[]> => {

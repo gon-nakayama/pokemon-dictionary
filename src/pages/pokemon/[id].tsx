@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowNarrowLeftIcon } from "@heroicons/react/solid";
-import { pokemonRepository } from "@/api/repositories/pokemonRepository";
+import { pokemonFactory } from "@/api/models/pokemonModel";
+import { mockPokemonRepository } from "@/api/repositories/mock/mockPokemonRepository";
 import { ABILITIES } from "@/constants";
 import { Layout } from "@/layouts/";
 import Ability from "@/components/Ability";
@@ -11,7 +12,9 @@ export const getServerSideProps = async (context: {
   query: { id: number };
 }) => {
   const { id } = context.query;
-  const pokemon = await pokemonRepository.getPokemon({ entry_number: id });
+  const pokemon = await pokemonFactory(mockPokemonRepository).showOne({
+    entry_number: id,
+  });
 
   return {
     props: { pokemon },
