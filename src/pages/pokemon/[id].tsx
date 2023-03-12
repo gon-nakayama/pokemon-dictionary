@@ -6,7 +6,6 @@ import { pokemonFactory } from "@/api/models/pokemonModel";
 import { mockPokemonRepository } from "@/api/repositories/mock/mockPokemonRepository";
 import { ABILITIES } from "@/constants";
 import { Layout } from "@/layouts/";
-import Ability from "@/components/Ability";
 import { Button } from "@/components/Elements";
 import type { GetPokemon } from "@/api/models/pokemonModel";
 
@@ -35,6 +34,12 @@ const Pokemon = ({ pokemon }: PokemonProps) => {
       {pokemon ? (
         <Layout>
           <>
+            <h5 className="mt-4 mb-2 text-center text-2xl font-semibold tracking-tight text-gray-900">
+              {pokemon.name_ja}
+            </h5>
+            <h5 className="mb-2 text-center text-lg font-semibold tracking-tight text-gray-900">
+              （英: {pokemon.name}）
+            </h5>
             <div
               style={{
                 display: "flex",
@@ -44,6 +49,7 @@ const Pokemon = ({ pokemon }: PokemonProps) => {
               }}
             >
               <Image
+                style={{ backgroundColor: "#e4e4e7" }}
                 className="animate-slide-in-bottom"
                 src={pokemon.image_url}
                 alt={pokemon.name_ja}
@@ -51,59 +57,226 @@ const Pokemon = ({ pokemon }: PokemonProps) => {
                 height={350}
               />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8">
-              <div className="rounded-lg border border-gray-200 bg-white p-6 shadow dark:border-gray-700 dark:bg-gray-800 md:ml-6 md:max-w-sm md:justify-self-end">
-                <h5 className="mb-2 text-center text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                  {pokemon.name_ja}
-                </h5>
-                <h5 className="mb-2 text-center text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-                  （英: {pokemon.name}）
-                </h5>
-                <p className="my-3 font-normal text-gray-500 dark:text-gray-400">
-                  {pokemon.flavor_text}
+            <p className="my-3 p-6 font-normal text-gray-900 md:text-center">
+              {pokemon.flavor_text}
+            </p>
+            <div className="flex w-64 justify-center">
+              <div className="mx-4 mt-4 max-w-sm rounded-lg border border-gray-600 bg-white p-4">
+                <p className="mb-4 font-mono text-xl font-medium text-gray-900">
+                  のうりょく
                 </p>
-              </div>
-              <div className="md:mr-6md:max-w-sm mt-12 rounded-lg border border-gray-200 bg-white p-6 shadow dark:border-gray-700 dark:bg-gray-800 md:max-w-sm md:justify-self-start">
-                <h5 className="mb-2 text-center text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-                  分類：{pokemon.genus}
-                </h5>
-                {/* <h5 className="mb-2 text-center text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-                タイプ：
-                {pokemon.types.map((t: { type: { name: string } }, index) => (
-                  <span
-                    key={index}
-                    className="mr-2 ml-3 rounded bg-blue-100 px-2.5 py-0.5 text-xs font-semibold text-red-800 dark:bg-red-200 dark:text-red-800"
-                  >
-                    {translateKindToJaLabel(t.type.name)}
-                  </span>
-                ))}
-              </h5> */}
+                <div className="gap-8 md:grid md:grid-cols-2">
+                  <div>
+                    <dl>
+                      <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {ABILITIES.HP}
+                      </dt>
+                      <dd className="mb-3 flex items-center">
+                        <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+                          <div
+                            className="h-2.5 rounded bg-blue-600"
+                            style={{ width: "100%" }}
+                          ></div>
+                        </div>
+                        <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                          {pokemon.hp}
+                        </span>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {ABILITIES.ATACK}
+                      </dt>
+                      <dd className="mb-3 flex items-center">
+                        <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+                          <div
+                            className="h-2.5 rounded bg-blue-600"
+                            style={{ width: "89%" }}
+                          ></div>
+                        </div>
+                        <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                          {pokemon.attack}
+                        </span>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {ABILITIES.DEFENSE}
+                      </dt>
+                      <dd className="mb-3 flex items-center">
+                        <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+                          <div
+                            className="h-2.5 rounded bg-blue-600"
+                            style={{ width: "88%" }}
+                          ></div>
+                        </div>
+                        <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                          {pokemon.defense}
+                        </span>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {ABILITIES.SP_ATK}
+                      </dt>
+                      <dd className="flex items-center">
+                        <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+                          <div
+                            className="h-2.5 rounded bg-blue-600"
+                            style={{ width: "54%" }}
+                          ></div>
+                        </div>
+                        <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                          {pokemon.special_attack}
+                        </span>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div>
+                    <dl>
+                      <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {ABILITIES.SP_DEF}
+                      </dt>
+                      <dd className="mb-3 flex items-center">
+                        <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+                          <div
+                            className="h-2.5 rounded bg-blue-600"
+                            style={{ width: "89%" }}
+                          ></div>
+                        </div>
+                        <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                          {pokemon.special_defense}
+                        </span>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {ABILITIES.AGILITY}
+                      </dt>
+                      <dd className="mb-3 flex items-center">
+                        <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+                          <div
+                            className="h-2.5 rounded bg-blue-600"
+                            style={{ width: "70%" }}
+                          ></div>
+                        </div>
+                        <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                          {pokemon.speed}
+                        </span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="mx-auto mt-12 w-full max-w-sm rounded-lg border border-gray-600 bg-white p-4">
-              <Ability text={ABILITIES.HP} textAlign="center" numStar={4} />
-              <Ability text={ABILITIES.ATACK} textAlign="center" numStar={4} />
-              <Ability
-                text={ABILITIES.DEFENSE}
-                textAlign="default"
-                numStar={2}
-              />
-              <Ability
-                text={ABILITIES.SP_ATK}
-                textAlign="default"
-                numStar={1}
-              />
-              <Ability
-                text={ABILITIES.SP_DEF}
-                textAlign="default"
-                numStar={5}
-              />
-              <Ability
-                text={ABILITIES.AGILITY}
-                textAlign="default"
-                numStar={2}
-              />
-            </div>
+            {/* <div className="mx-4 mt-4 max-w-sm rounded-lg border border-gray-600 bg-white p-4">
+              <p className="mb-4 font-mono text-xl font-medium text-gray-900">
+                のうりょく
+              </p>
+              <div className="gap-8 md:grid md:grid-cols-2">
+                <div>
+                  <dl>
+                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      {ABILITIES.HP}
+                    </dt>
+                    <dd className="mb-3 flex items-center">
+                      <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+                        <div
+                          className="h-2.5 rounded bg-blue-600"
+                          style={{ width: "100%" }}
+                        ></div>
+                      </div>
+                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {pokemon.hp}
+                      </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      {ABILITIES.ATACK}
+                    </dt>
+                    <dd className="mb-3 flex items-center">
+                      <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+                        <div
+                          className="h-2.5 rounded bg-blue-600"
+                          style={{ width: "89%" }}
+                        ></div>
+                      </div>
+                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {pokemon.attack}
+                      </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      {ABILITIES.DEFENSE}
+                    </dt>
+                    <dd className="mb-3 flex items-center">
+                      <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+                        <div
+                          className="h-2.5 rounded bg-blue-600"
+                          style={{ width: "88%" }}
+                        ></div>
+                      </div>
+                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {pokemon.defense}
+                      </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      {ABILITIES.SP_ATK}
+                    </dt>
+                    <dd className="flex items-center">
+                      <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+                        <div
+                          className="h-2.5 rounded bg-blue-600"
+                          style={{ width: "54%" }}
+                        ></div>
+                      </div>
+                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {pokemon.special_attack}
+                      </span>
+                    </dd>
+                  </dl>
+                </div>
+                <div>
+                  <dl>
+                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      {ABILITIES.SP_DEF}
+                    </dt>
+                    <dd className="mb-3 flex items-center">
+                      <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+                        <div
+                          className="h-2.5 rounded bg-blue-600"
+                          style={{ width: "89%" }}
+                        ></div>
+                      </div>
+                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {pokemon.special_defense}
+                      </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      {ABILITIES.AGILITY}
+                    </dt>
+                    <dd className="mb-3 flex items-center">
+                      <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+                        <div
+                          className="h-2.5 rounded bg-blue-600"
+                          style={{ width: "70%" }}
+                        ></div>
+                      </div>
+                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {pokemon.speed}
+                      </span>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div> */}
+
             <div className="my-8 flex justify-center">
               <Button
                 onClick={handler}

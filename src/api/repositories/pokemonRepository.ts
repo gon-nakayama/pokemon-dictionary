@@ -31,7 +31,7 @@ const getPokemons = async (): Promise<GetPokemon[]> => {
 
 const getPokemon = async (
   params: Pick<GetPokemon, "entry_number">
-): Promise<GetPokemon> => {
+): Promise<GetPokemon | undefined> => {
   const response = await ApiClient.get(`/pokemons/${params.entry_number}`);
 
   return response.data;
