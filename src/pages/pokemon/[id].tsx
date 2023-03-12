@@ -1,6 +1,5 @@
 import type { GetServerSideProps } from "next";
 import Image from "next/image";
-import Router from "next/router";
 import { pokemonFactory } from "@/api/models/pokemonModel";
 import { mockPokemonRepository } from "@/api/repositories/mock/mockPokemonRepository";
 import { ABILITIES } from "@/constants";
@@ -24,10 +23,6 @@ type PokemonProps = {
 };
 
 const Pokemon = ({ pokemon }: PokemonProps) => {
-  const handler = async () => {
-    await Router.push("/");
-  };
-
   return (
     <>
       {pokemon ? (
