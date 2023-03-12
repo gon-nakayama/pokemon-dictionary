@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import masterBall from "@/assets/icon_master_ball.svg";
 import searchIcon from "@/assets/icon_search.svg";
@@ -40,13 +41,15 @@ export const Header = ({ search }: HeaderProps) => {
             <>
               <button className="cursor-pointer">
                 <span>
-                  <Image
-                    src={QuizIcon}
-                    alt="SearchIcon Icon"
-                    className="text-center"
-                    width="48"
-                    height="48"
-                  />
+                  <Link href="/pokemon/quiz">
+                    <Image
+                      src={QuizIcon}
+                      alt="SearchIcon Icon"
+                      className="text-center"
+                      width="48"
+                      height="48"
+                    />
+                  </Link>
                 </span>
                 <span className="text-white">クイズ</span>
               </button>

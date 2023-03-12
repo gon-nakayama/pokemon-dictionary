@@ -1,5 +1,6 @@
 import type { GetServerSideProps } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { pokemonFactory } from "@/api/models/pokemonModel";
 import { mockPokemonRepository } from "@/api/repositories/mock/mockPokemonRepository";
 import { Layout } from "@/layouts/";
@@ -46,26 +47,38 @@ const Quiz = ({ pokemon }: PokemonProps) => {
               />
             </div>
             <div className="grid grid-cols-4 justify-center text-center md:flex md:flex-row">
-              <div className="col-span-4 mx-4 my-2 md:w-full">
-                <div className="rounded-full border bg-blue-700 p-2 text-center text-white hover:opacity-80 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70 md:flex-1">
+              <Link
+                className="col-span-4 mx-4 my-2 md:w-full"
+                href={`/pokemon/quiz/answer/${pokemon.entry_number}`}
+              >
+                <div className="rounded-full border bg-yellow-400 p-2 text-center text-white hover:opacity-80 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70 md:flex-1">
                   ピカチュウ
                 </div>
-              </div>
-              <div className="col-span-4 mx-4 my-2 md:w-full">
-                <div className="rounded-full border bg-blue-700 p-2 text-center text-white hover:opacity-80 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70 md:flex-1">
-                  ヒトカゲ
+              </Link>
+              <Link
+                className="col-span-4 mx-4 my-2 md:w-full"
+                href={`/pokemon/quiz/answer/${pokemon.entry_number}`}
+              >
+                <div className="rounded-full border bg-green-700 p-2 text-center text-white hover:opacity-80 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70 md:flex-1">
+                  {pokemon.name_ja}
                 </div>
-              </div>
-              <div className="col-span-4 mx-4 my-2 md:w-full">
+              </Link>
+              <Link
+                className="col-span-4 mx-4 my-2 md:w-full"
+                href={`/pokemon/quiz/answer/${pokemon.entry_number}`}
+              >
                 <div className="rounded-full border bg-blue-700 p-2 text-center text-white hover:opacity-80 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70 md:flex-1">
-                  フシギダネ
+                  カメックス
                 </div>
-              </div>
-              <div className="col-span-4 mx-4 my-2 md:w-full">
-                <div className="rounded-full border bg-blue-700 p-2 text-center text-white hover:opacity-80 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70 md:flex-1">
-                  ゼニガメ
+              </Link>
+              <Link
+                className="col-span-4 mx-4 my-2 md:w-full"
+                href={`/pokemon/quiz/answer/${pokemon.entry_number}`}
+              >
+                <div className="rounded-full border bg-pink-700 p-2 text-center text-white hover:opacity-80 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70 md:flex-1">
+                  ピッピ
                 </div>
-              </div>
+              </Link>
             </div>
           </>
         </Layout>
