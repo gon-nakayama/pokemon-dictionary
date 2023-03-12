@@ -1,24 +1,29 @@
-import Rating from "@/components/Rating";
 import type { Abilities } from "@/constants";
 
 type AbilityProps = {
   text: Abilities;
-  textAlign: "default" | "center";
-  numStar: 0 | 1 | 2 | 3 | 4 | 5;
+  value: number;
 };
 
-const Ability = ({ text, textAlign, numStar }: AbilityProps) => {
+const Ability = ({ text, value }: AbilityProps) => {
   return (
     <>
-      <div className="flex p-3">
-        <div className={textAlign ? "w-2/4 flex-initial" : "w-32 flex-initial"}>
-          <div className="self-center text-lg text-black">{text}</div>
-        </div>
-        <hr className="text-black" />
-        <div className="w-2/4 flex-auto">
-          <Rating numStar={numStar} />
-        </div>
-      </div>
+      <dl>
+        <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
+          {text}
+        </dt>
+        <dd className="mb-3 flex items-center">
+          <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
+            <div
+              className="h-2.5 rounded bg-emerald-400"
+              style={{ width: `${(value / 150) * 100}%` }}
+            ></div>
+          </div>
+          <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+            {value}
+          </span>
+        </dd>
+      </dl>
     </>
   );
 };
