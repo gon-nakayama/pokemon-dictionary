@@ -60,7 +60,7 @@ const Pokemon = ({ pokemon }: PokemonProps) => {
               {pokemon.flavor_text}
             </p>
             <div className="">
-              <div className="mx-4 mt-4 max-w-sm rounded-lg border border-gray-600 bg-white p-4 ">
+              <div className="m-4 max-w-sm rounded-lg border border-gray-600 bg-white p-4">
                 <p className="mb-4 font-mono text-xl font-medium text-gray-900">
                   のうりょく
                 </p>
