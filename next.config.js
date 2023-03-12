@@ -7,6 +7,9 @@ const nextConfig = {
   env: {
     ...require(`./env/${process.env.APP_ENV || "local"}.json`),
   },
+  experimental: {
+    scrollRestoration: true,
+  },
 };
 
 module.exports = nextConfig;

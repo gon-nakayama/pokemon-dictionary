@@ -1,13 +1,11 @@
 import type { GetServerSideProps } from "next";
 import Image from "next/image";
 import Router from "next/router";
-import { ArrowNarrowLeftIcon } from "@heroicons/react/solid";
 import { pokemonFactory } from "@/api/models/pokemonModel";
 import { mockPokemonRepository } from "@/api/repositories/mock/mockPokemonRepository";
 import { ABILITIES } from "@/constants";
 import { Layout } from "@/layouts/";
 import Ability from "@/components/Ability";
-import { Button } from "@/components/Elements";
 import type { GetPokemon } from "@/api/models/pokemonModel";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
@@ -62,11 +60,11 @@ const Pokemon = ({ pokemon }: PokemonProps) => {
               {pokemon.flavor_text}
             </p>
             <div className="">
-              <div className="mx-4 mt-4 max-w-sm rounded-lg border border-gray-600 bg-white p-4">
+              <div className="mx-4 mt-4 max-w-sm rounded-lg border border-gray-600 bg-white p-4 ">
                 <p className="mb-4 font-mono text-xl font-medium text-gray-900">
                   のうりょく
                 </p>
-                <div className="gap-8 md:grid md:grid-cols-2">
+                <div className="">
                   <div>
                     <Ability text={ABILITIES.HP} value={pokemon.hp} />
                     <Ability text={ABILITIES.ATACK} value={pokemon.attack} />
@@ -83,124 +81,21 @@ const Pokemon = ({ pokemon }: PokemonProps) => {
                   </div>
                 </div>
               </div>
-            </div>
-            {/* <div className="mx-4 mt-4 max-w-sm rounded-lg border border-gray-600 bg-white p-4">
-              <p className="mb-4 font-mono text-xl font-medium text-gray-900">
-                のうりょく
-              </p>
-              <div className="gap-8 md:grid md:grid-cols-2">
-                <div>
-                  <dl>
-                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      {ABILITIES.HP}
-                    </dt>
-                    <dd className="mb-3 flex items-center">
-                      <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
-                        <div
-                          className="h-2.5 rounded bg-blue-600"
-                          style={{ width: "100%" }}
-                        ></div>
-                      </div>
-                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                        {pokemon.hp}
-                      </span>
-                    </dd>
-                  </dl>
-                  <dl>
-                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      {ABILITIES.ATACK}
-                    </dt>
-                    <dd className="mb-3 flex items-center">
-                      <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
-                        <div
-                          className="h-2.5 rounded bg-blue-600"
-                          style={{ width: "89%" }}
-                        ></div>
-                      </div>
-                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                        {pokemon.attack}
-                      </span>
-                    </dd>
-                  </dl>
-                  <dl>
-                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      {ABILITIES.DEFENSE}
-                    </dt>
-                    <dd className="mb-3 flex items-center">
-                      <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
-                        <div
-                          className="h-2.5 rounded bg-blue-600"
-                          style={{ width: "88%" }}
-                        ></div>
-                      </div>
-                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                        {pokemon.defense}
-                      </span>
-                    </dd>
-                  </dl>
-                  <dl>
-                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      {ABILITIES.SP_ATK}
-                    </dt>
-                    <dd className="flex items-center">
-                      <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
-                        <div
-                          className="h-2.5 rounded bg-blue-600"
-                          style={{ width: "54%" }}
-                        ></div>
-                      </div>
-                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                        {pokemon.special_attack}
-                      </span>
-                    </dd>
-                  </dl>
+              {/* <div className="flex flex-row">
+                <div className="mx-4 mt-4 w-96 flex-initial rounded-lg border border-gray-600 bg-white p-4">
+                  <p className="mb-4 font-mono text-xl font-medium text-gray-900">
+                    T.B.D
+                  </p>
+                  <div className="h-96 w-32">
+                    <div>
+                      <p>分類</p>
+                      <p>タイプ</p>
+                      <p>高さ/重さ</p>
+                      <p>特性</p>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <dl>
-                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      {ABILITIES.SP_DEF}
-                    </dt>
-                    <dd className="mb-3 flex items-center">
-                      <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
-                        <div
-                          className="h-2.5 rounded bg-blue-600"
-                          style={{ width: "89%" }}
-                        ></div>
-                      </div>
-                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                        {pokemon.special_defense}
-                      </span>
-                    </dd>
-                  </dl>
-                  <dl>
-                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      {ABILITIES.AGILITY}
-                    </dt>
-                    <dd className="mb-3 flex items-center">
-                      <div className="mr-2 h-2.5 w-full rounded bg-gray-200 dark:bg-gray-700">
-                        <div
-                          className="h-2.5 rounded bg-blue-600"
-                          style={{ width: "70%" }}
-                        ></div>
-                      </div>
-                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                        {pokemon.speed}
-                      </span>
-                    </dd>
-                  </dl>
-                </div>
-              </div>
-            </div> */}
-
-            <div className="my-8 flex justify-center">
-              <Button
-                onClick={handler}
-                size="lg"
-                variant="inverse"
-                startIcon={<ArrowNarrowLeftIcon className="h-4 w-4" />}
-              >
-                まえのページに戻る
-              </Button>
+              </div> */}
             </div>
           </>
         </Layout>

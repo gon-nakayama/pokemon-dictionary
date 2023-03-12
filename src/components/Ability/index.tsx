@@ -1,7 +1,5 @@
-import type { Abilities } from "@/constants";
-
 type AbilityProps = {
-  text: Abilities;
+  text: string;
   value: number;
 };
 
