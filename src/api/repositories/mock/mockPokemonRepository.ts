@@ -37033,9 +37033,9 @@ const getPokemonsTopView = async (): Promise<TopView[]> => {
 };
 
 const searchPokemons = async (
-  params: Pick<GetPokemon, "name_ja">
-): Promise<GetPokemon[]> => {
-  return [datas[150], datas[151]];
+  params: Pick<TopView, "name_ja">
+): Promise<TopView[]> => {
+  return topViewDatas.filter((d) => d.name_ja.includes(params.name_ja));
 };
 
 const getPokemon = async (

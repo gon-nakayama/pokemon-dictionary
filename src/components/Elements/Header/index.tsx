@@ -4,7 +4,11 @@ import masterBall from "@/assets/icon_master_ball.svg";
 import searchIcon from "@/assets/icon_search.svg";
 import SearchDialog from "@/components/Dialog/SearchDialog";
 
-export const Header = () => {
+type HeaderProps = {
+  search?: (nameJa: string) => void;
+};
+
+export const Header = ({ search }: HeaderProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => {
@@ -18,6 +22,7 @@ export const Header = () => {
   const searchDialogProps = {
     isOpen,
     close: closeModal,
+    search,
   };
 
   return (

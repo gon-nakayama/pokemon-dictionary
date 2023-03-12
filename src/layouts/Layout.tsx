@@ -1,13 +1,14 @@
 import type { ReactElement } from "react";
 import { Header } from "@/components/Elements";
 
-type LayoutProps = Required<{
+type LayoutProps = {
   readonly children: ReactElement;
-}>;
+  search?: (nameJa: string) => void;
+};
 
-export const Layout = ({ children }: LayoutProps) => (
+export const Layout = ({ children, search }: LayoutProps) => (
   <>
-    <Header />
+    <Header search={search} />
     {children}
   </>
 );

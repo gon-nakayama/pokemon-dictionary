@@ -8,9 +8,7 @@ import type { GetPokemon, TopView } from "@/api/models/pokemonModel";
 
 export type PokemonRepository = {
   getPokemons: () => Promise<GetPokemon[]>;
-  searchPokemons: (
-    params: Pick<GetPokemon, "name_ja">
-  ) => Promise<GetPokemon[]>;
+  searchPokemons: (params: Pick<TopView, "name_ja">) => Promise<TopView[]>;
   getPokemonsTopView: () => Promise<TopView[]>;
   getPokemon: (
     params: Pick<GetPokemon, "entry_number">
@@ -38,8 +36,8 @@ const getPokemon = async (
 };
 
 const searchPokemons = async (
-  params: Pick<GetPokemon, "name_ja">
-): Promise<GetPokemon[]> => {
+  params: Pick<TopView, "name_ja">
+): Promise<TopView[]> => {
   const response = await ApiClient.post("/pokemons/search", {
     nameJa: { ...params },
   });

@@ -43,9 +43,7 @@ export const pokemonFactory = (rep?: PokemonRepository) => {
     show: async (): Promise<GetPokemon[]> => {
       return await repository.getPokemons();
     },
-    search: async (
-      params: Pick<GetPokemon, "name_ja">
-    ): Promise<GetPokemon[]> => {
+    search: async (params: Pick<TopView, "name_ja">): Promise<TopView[]> => {
       return await repository.searchPokemons({ ...params });
     },
   };

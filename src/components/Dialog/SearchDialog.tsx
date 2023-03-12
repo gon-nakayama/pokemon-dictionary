@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Transition, Dialog } from "@headlessui/react";
 import CloseDialogButton from "@/components/Dialog/CloseDialogButton";
 import { Button } from "@/components/Elements";
@@ -6,9 +6,22 @@ import { Button } from "@/components/Elements";
 type SearchDialogProps = {
   isOpen: boolean;
   close: () => void;
+  search?: (nameJa: string) => void;
 };
 
-const SearchDialog = ({ isOpen, close }: SearchDialogProps) => {
+const SearchDialog = ({ isOpen, close, search }: SearchDialogProps) => {
+  const [searchParam, setSearchParam] = useState("");
+
+  const clickHandler = () => {
+    if (!search) return;
+    search(searchParam);
+    close();
+  };
+
+  const resetHandler = () => {
+    setSearchParam("");
+  };
+
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
@@ -57,16 +70,24 @@ const SearchDialog = ({ isOpen, close }: SearchDialogProps) => {
                       className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500"
                       placeholder="カタカナでにゅうりょくしてね"
                       required
+                      onChange={(e) => {
+                        setSearchParam(e.target.value);
+                      }}
                     />
                   </div>
                   <div className="mt-4 grid grid-cols-6 gap-4">
-                    <Button size="sm" className="col-start-1 col-end-4">
+                    <Button
+                      size="sm"
+                      className="col-start-1 col-end-4"
+                      onClick={clickHandler}
+                    >
                       けんさくする
                     </Button>
                     <Button
                       size="sm"
                       variant="inverse"
                       className="col-start-4 col-end-7"
+                      onClick={resetHandler}
                     >
                       リセットする
                     </Button>
