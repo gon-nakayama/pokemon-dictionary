@@ -35,18 +35,20 @@ export const Header = ({ search }: HeaderProps) => {
               ポケモン図鑑
             </span>
           </div>
-          <button className="cursor-pointer" onClick={openModal}>
-            <span>
-              <Image
-                src={searchIcon}
-                alt="SearchIcon Icon"
-                className="text-center"
-                width="48"
-                height="48"
-              />
-            </span>
-            <span className="text-white">けんさく</span>
-          </button>
+          {search && (
+            <button className="cursor-pointer" onClick={openModal}>
+              <span>
+                <Image
+                  src={searchIcon}
+                  alt="SearchIcon Icon"
+                  className="text-center"
+                  width="48"
+                  height="48"
+                />
+              </span>
+              <span className="text-white">けんさく</span>
+            </button>
+          )}
         </div>
       </nav>
       <SearchDialog {...searchDialogProps} />

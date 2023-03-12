@@ -19,7 +19,9 @@ const SearchDialog = ({ isOpen, close, search }: SearchDialogProps) => {
   };
 
   const resetHandler = () => {
-    setSearchParam("");
+    if (!search) return;
+    search("");
+    close();
   };
 
   return (
@@ -89,7 +91,7 @@ const SearchDialog = ({ isOpen, close, search }: SearchDialogProps) => {
                       className="col-start-4 col-end-7"
                       onClick={resetHandler}
                     >
-                      リセットする
+                      はじめから
                     </Button>
                   </div>
 
