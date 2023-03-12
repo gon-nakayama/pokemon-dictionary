@@ -1,3 +1,4 @@
+import type { GetServerSideProps } from "next";
 import Image from "next/image";
 import Router from "next/router";
 import { ArrowNarrowLeftIcon } from "@heroicons/react/solid";
@@ -9,12 +10,10 @@ import Ability from "@/components/Ability";
 import { Button } from "@/components/Elements";
 import type { GetPokemon } from "@/api/models/pokemonModel";
 
-export const getServerSideProps = async (context: {
-  query: { id: number };
-}) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const { id } = context.query;
   const pokemon = await pokemonFactory(mockPokemonRepository).showOne({
-    entry_number: id,
+    entry_number: Number(id),
   });
 
   return {
